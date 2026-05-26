@@ -1,0 +1,193 @@
+<NMSMPipelineDocument Version="1.4.0">
+	<MuscleTendonPersonalizationTool name="default">
+		<!--Name of the directory where results are written. Be default this is the directory in which the setup file is be  executed.-->
+		<results_directory>MTPResultsLeft</results_directory>
+		<!--Name of file containing input model, if using the application this has no effect as current model is used.-->
+		<input_model_file>..\UF_Subject_4_Scaled_JMP.osim</input_model_file>
+		<!--The name of the osimx file that results from MuscleTendon personalization to be used by downstream steps.-->
+		<input_osimx_file>MTPResultsRight\UF_Subject_4_jmp_gcp_mtp.osimx</input_osimx_file>
+		<!--The name of the folder containing preprocessed data to run the MuscleTendonPersonalizationTool.-->
+		<data_directory>..\preprocessing\preprocessed</data_directory>
+		<!--Coordinates Muscle-Tendon Personalization tracked their joint moments. Leave empty for none. Muscles spanning these coordinates will be extracted automatically.-->
+		<coordinate_list>hip_flexion_l hip_adduction_l hip_rotation_l knee_angle_l ankle_angle_l subtalar_angle_l</coordinate_list>
+		<!--*Optional* The vMaxFactor to use. Default is 10.-->
+		<v_max_factor>10</v_max_factor>
+		<!--A space-separated list of the activation muscle groups.-->
+		<activation_muscle_groups>HipFlexorsActivationGroupL HipAdductorsActivationGroupL HipRotatorsActivationGroupL GlutmaxActivationGroupL HipAbductorsActivationGroupL HamsActivationGroupL VasActivationGroupL GasActivationGroupL ToesExtensorsActivationGroupL AnkleInvertorsActivationGroupL AnkleEvertorsActivationGroupL</activation_muscle_groups>
+		<!--A space-separated list of the normalized fiber length muscle groups.-->
+		<normalized_fiber_length_muscle_groups>HipAdductorLongusNormalizedFiberLengthGroupL HipAdductorMagnusNormalizedFiberLengthGroupL GlutmaxNormalizedFiberLengthGroupL GlutmedNormalizedFiberLengthGroupL GlutminNormalizedFiberLengthGroupL HamsNormalizedFiberLengthGroupL VasNormalizedFiberLengthGroupL GasNormalizedFiberLengthGroupL ToesExtensorsNormalizedFiberLengthGroupL AnkleInvertorsNormalizedFiberLengthGroupL AnkleEvertorsNormalizedFiberLengthGroupL</normalized_fiber_length_muscle_groups>
+		<!--A space-separated list of missing EMG channel names.-->
+		<missing_emg_channel_muscle_groups>HipRotatorsMissingEMGChannelGroupL SartMissingEMGChannelGroupL TflMissingEMGChannelGroupL</missing_emg_channel_muscle_groups>
+		<!--A space-separated list of collected EMG channel names.-->
+		<collected_emg_channel_muscle_groups>Iliopsoas_L AddLong_L GlutMax_L GlutMed_L RecFem_L SemiMemb_L BicFemLong_L VastMed_L VastLat_L GasMed_L Sol_L TibAnt_L ExtDigLong_L TibPost_L FlexDigLong_L PeroneusLong_L</collected_emg_channel_muscle_groups>
+		<!--*Optional* The number of allowed iterations of the fmincon optimization,  setting this lower can help cancel an optimization that won't converge.-->
+		<max_iterations>1000</max_iterations>
+		<!--*Optional* The number of allowed cost function calls for the fmincon optimization,  setting this lower can help cancel an optimization that won't converge.-->
+		<max_function_evaluations>100000000</max_function_evaluations>
+		<!--*Optional* The step tolerance determines when the lsqnonlin algorithm stops. The larger it is, the earlier the algorithm stops, but with lower accuracy.-->
+		<step_tolerance>9.9999999999999995e-07</step_tolerance>
+		<!--Properties that describe MuscleTendonLengthInitialization settings.-->
+		<MuscleTendonLengthInitialization>
+			<is_enabled>true</is_enabled>
+			<passive_data_input_directory>..\MuscleAnalysis\thelen_l</passive_data_input_directory>
+			<max_normalized_muscle_fiber_length>1.0</max_normalized_muscle_fiber_length>
+			<min_normalized_muscle_fiber_length>0.8</min_normalized_muscle_fiber_length>
+			<optimize_maximum_muscle_stress>true</optimize_maximum_muscle_stress>
+			<optimize_isometric_max_force>true</optimize_isometric_max_force>
+			<maximum_muscle_stress>610000</maximum_muscle_stress>
+			<optimize_absolute_length_changes>true</optimize_absolute_length_changes>
+			<RCNLCostTermSet>
+				<RCNLCostTerm>
+					<is_enabled>true</is_enabled>
+					<type>passive_joint_moment</type>
+					<max_allowable_error>15</max_allowable_error>
+				</RCNLCostTerm>
+				<RCNLCostTerm>
+					<is_enabled>true</is_enabled>
+					<type>optimal_muscle_fiber_length</type>
+					<max_allowable_error>0.005</max_allowable_error>
+					<error_center>0</error_center>
+				</RCNLCostTerm>
+				<RCNLCostTerm>
+					<is_enabled>true</is_enabled>
+					<type>tendon_slack_length</type>
+					<max_allowable_error>0.005</max_allowable_error>
+					<error_center>0</error_center>
+				</RCNLCostTerm>
+				<RCNLCostTerm>
+					<is_enabled>true</is_enabled>
+					<type>minimum_normalized_muscle_fiber_length</type>
+					<max_allowable_error>0.01</max_allowable_error>
+				</RCNLCostTerm>
+				<RCNLCostTerm>
+					<is_enabled>true</is_enabled>
+					<type>maximum_normalized_muscle_fiber_length</type>
+					<max_allowable_error>0.01</max_allowable_error>
+				</RCNLCostTerm>
+				<RCNLCostTerm>
+					<is_enabled>true</is_enabled>
+					<type>maximum_muscle_stress</type>
+					<max_allowable_error>0.1</max_allowable_error>
+					<error_center>1.2</error_center>
+				</RCNLCostTerm>
+				<RCNLCostTerm>
+					<is_enabled>false</is_enabled>
+					<type>passive_muscle_force</type>
+					<max_allowable_error>10</max_allowable_error>
+				</RCNLCostTerm>
+				<RCNLCostTerm>
+					<is_enabled>true</is_enabled>
+					<type>grouped_normalized_muscle_fiber_length</type>
+					<max_allowable_error>0.1</max_allowable_error>
+				</RCNLCostTerm>
+				<RCNLCostTerm>
+					<is_enabled>true</is_enabled>
+					<type>grouped_maximum_normalized_muscle_fiber_length</type>
+					<max_allowable_error>0.1</max_allowable_error>
+				</RCNLCostTerm>
+			</RCNLCostTermSet>
+		</MuscleTendonLengthInitialization>
+		<MTPSynergyExtrapolation>
+			<is_enabled>true</is_enabled>
+			<matrix_factorization_method>PCA</matrix_factorization_method>
+			<number_of_synergies>5</number_of_synergies>
+			<synergy_extrapolation_categorization>trial</synergy_extrapolation_categorization>
+			<residual_categorization>task</residual_categorization>
+			<RCNLCostTermSet>
+				<RCNLCostTerm>
+					<is_enabled>true</is_enabled>
+					<type>measured_inverse_dynamics_joint_moment</type>
+					<max_allowable_error>1</max_allowable_error>
+				</RCNLCostTerm>
+				<RCNLCostTerm>
+					<is_enabled>true</is_enabled>
+					<type>extrapolated_muscle_activation</type>
+					<max_allowable_error>1</max_allowable_error>
+				</RCNLCostTerm>
+				<RCNLCostTerm>
+					<is_enabled>true</is_enabled>
+					<type>residual_muscle_activation</type>
+					<max_allowable_error>0.01</max_allowable_error>
+				</RCNLCostTerm>
+			</RCNLCostTermSet>
+		</MTPSynergyExtrapolation>
+		<MTPTaskList>
+			<MTPTask>
+				<is_enabled>true</is_enabled>
+				<index>1</index>
+				<muscle_specific_electromechanical_delays>true</muscle_specific_electromechanical_delays>
+				<optimize_electromechanical_delays>true</optimize_electromechanical_delays>
+				<optimize_activation_time_constants>true</optimize_activation_time_constants>
+				<optimize_activation_nonlinearity_constants>true</optimize_activation_nonlinearity_constants>
+				<optimize_emg_scale_factors>true</optimize_emg_scale_factors>
+				<optimize_optimal_fiber_lengths>true</optimize_optimal_fiber_lengths>
+				<optimize_tendon_slack_lengths>true</optimize_tendon_slack_lengths>
+				<RCNLCostTermSet>
+					<RCNLCostTerm>
+						<is_enabled>true</is_enabled>
+						<type>inverse_dynamics_joint_moment</type>
+						<max_allowable_error>3</max_allowable_error>
+					</RCNLCostTerm>
+					<RCNLCostTerm>
+						<is_enabled>true</is_enabled>
+						<type>activation_time_constant</type>
+						<max_allowable_error>0.02</max_allowable_error>
+						<error_center>0.014999999999999999</error_center>
+					</RCNLCostTerm>
+					<RCNLCostTerm>
+						<is_enabled>true</is_enabled>
+						<type>activation_nonlinearity_constant</type>
+						<max_allowable_error>0.005000000000000001</max_allowable_error>
+					</RCNLCostTerm>
+					<RCNLCostTerm>
+						<is_enabled>true</is_enabled>
+						<type>optimal_muscle_fiber_length</type>
+						<max_allowable_error>0.10000000000000001</max_allowable_error>
+					</RCNLCostTerm>
+					<RCNLCostTerm>
+						<is_enabled>true</is_enabled>
+						<type>tendon_slack_length</type>
+						<max_allowable_error>0.10000000000000001</max_allowable_error>
+					</RCNLCostTerm>
+					<RCNLCostTerm>
+						<is_enabled>true</is_enabled>
+						<type>emg_scale_factor</type>
+						<max_allowable_error>0.5</max_allowable_error>
+						<error_center>0.4</error_center>
+					</RCNLCostTerm>
+					<RCNLCostTerm>
+						<is_enabled>true</is_enabled>
+						<type>normalized_muscle_fiber_length</type>
+						<max_allowable_error>0.01</max_allowable_error>
+					</RCNLCostTerm>
+					<RCNLCostTerm>
+						<is_enabled>true</is_enabled>
+						<type>passive_muscle_force</type>
+						<max_allowable_error>10</max_allowable_error>
+					</RCNLCostTerm>
+					<RCNLCostTerm>
+						<is_enabled>true</is_enabled>
+						<type>grouped_normalized_muscle_fiber_length</type>
+						<max_allowable_error>0.050000000000000003</max_allowable_error>
+					</RCNLCostTerm>
+					<RCNLCostTerm>
+						<is_enabled>true</is_enabled>
+						<type>grouped_emg_scale_factor</type>
+						<max_allowable_error>0.010000000000000001</max_allowable_error>
+					</RCNLCostTerm>
+					<RCNLCostTerm>
+						<is_enabled>true</is_enabled>
+						<type>grouped_electromechanical_delay</type>
+						<max_allowable_error>0.20000000000000001</max_allowable_error>
+					</RCNLCostTerm>
+					<RCNLCostTerm>
+						<is_enabled>true</is_enabled>
+						<type>muscle_excitation_penalty</type>
+						<max_allowable_error>0.3</max_allowable_error>
+						<error_center>0.3</error_center>
+					</RCNLCostTerm>
+				</RCNLCostTermSet>
+			</MTPTask>
+		</MTPTaskList>
+	</MuscleTendonPersonalizationTool>
+</NMSMPipelineDocument>

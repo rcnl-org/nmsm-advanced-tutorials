@@ -1,0 +1,85 @@
+[2026-01-23 15:09:11.706] [error] IO.OpenInputFile(const string&,openmode mode): failed to open mtpResultsCombined\muscleActivations\gait_1_muscleActivations.sto.
+[2026-01-23 15:09:32.511] [error] IO.OpenInputFile(const string&,openmode mode): failed to open mtpResultsCombined\muscleActivations\gait_1_muscleActivations.sto.
+[2026-01-23 15:09:51.548] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP.osim
+[2026-01-23 15:09:51.952] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP.osim
+[2026-01-23 15:16:47.521] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP.osim
+[2026-01-23 15:16:47.964] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP.osim
+[2026-01-23 15:16:47.991] [error] IO.OpenInputFile(const string&,openmode mode): failed to open TOResults\Analysis\gait_1_trackedVelocities.sto.
+[2026-01-23 15:17:49.123] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP.osim
+[2026-01-23 15:18:57.066] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP.osim
+[2026-01-23 15:19:44.167] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP.osim
+[2026-01-23 15:19:56.546] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP.osim
+[2026-01-23 15:21:26.481] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP.osim
+[2026-01-23 15:22:08.475] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP.osim
+[2026-01-23 15:23:09.300] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP.osim
+[2026-01-23 15:23:15.686] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_hip_flexion_r.sto (nr=2525 nc=87)
+[2026-01-23 15:23:15.816] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_hip_flexion_r.sto (nr=2525 nc=87)
+[2026-01-23 15:23:15.883] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_hip_adduction_r.sto (nr=2525 nc=87)
+[2026-01-23 15:23:16.019] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_hip_rotation_r.sto (nr=2525 nc=87)
+[2026-01-23 15:23:16.154] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_knee_angle_r.sto (nr=2525 nc=87)
+[2026-01-23 15:23:16.284] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_ankle_angle_r.sto (nr=2525 nc=87)
+[2026-01-23 15:23:16.412] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_subtalar_angle_r.sto (nr=2525 nc=87)
+[2026-01-23 15:23:16.541] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_mtp_angle_r.sto (nr=2525 nc=87)
+[2026-01-23 15:23:16.668] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_hip_flexion_l.sto (nr=2525 nc=87)
+[2026-01-23 15:23:16.804] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_hip_adduction_l.sto (nr=2525 nc=87)
+[2026-01-23 15:23:16.939] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_hip_rotation_l.sto (nr=2525 nc=87)
+[2026-01-23 15:23:17.075] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_knee_angle_l.sto (nr=2525 nc=87)
+[2026-01-23 15:23:17.206] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_ankle_angle_l.sto (nr=2525 nc=87)
+[2026-01-23 15:23:17.335] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_subtalar_angle_l.sto (nr=2525 nc=87)
+[2026-01-23 15:23:17.466] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_mtp_angle_l.sto (nr=2525 nc=87)
+[2026-01-23 15:23:17.616] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_Length.sto (nr=2525 nc=87)
+[2026-01-23 15:23:17.761] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_Length.sto (nr=2525 nc=87)
+[2026-01-23 15:23:39.353] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP.osim
+[2026-01-23 15:25:41.320] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP.osim
+[2026-01-23 15:25:55.186] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP.osim
+[2026-01-23 15:26:40.190] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP.osim
+[2026-01-23 15:27:18.223] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP.osim
+[2026-01-23 15:27:47.735] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP.osim
+[2026-01-23 15:28:23.916] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP.osim
+[2026-01-23 15:29:10.655] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP.osim
+[2026-01-23 15:30:03.431] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP.osim
+[2026-01-23 15:31:44.463] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP.osim
+[2026-01-23 15:33:51.288] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP.osim
+[2026-01-23 15:34:39.068] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP.osim
+[2026-01-23 15:35:43.199] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP.osim
+[2026-01-23 15:38:13.470] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP.osim
+[2026-01-23 15:38:40.374] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP.osim
+[2026-01-23 15:39:01.959] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP.osim
+[2026-01-23 15:39:39.059] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP.osim
+[2026-01-23 15:50:02.348] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP.osim
+[2026-01-23 15:50:19.845] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP.osim
+[2026-01-23 15:50:32.662] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP.osim
+[2026-01-23 15:50:47.137] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP.osim
+[2026-01-23 15:55:44.097] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP.osim
+[2026-01-23 15:55:53.287] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP.osim
+[2026-01-23 15:56:39.355] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP.osim
+[2026-01-23 15:56:56.304] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP.osim
+[2026-01-23 15:58:24.555] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP.osim
+[2026-01-23 15:59:27.585] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP.osim
+[2026-01-23 16:00:24.731] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP.osim
+[2026-01-23 16:02:51.188] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP.osim
+[2026-01-23 16:12:07.976] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP.osim
+[2026-01-23 16:12:26.186] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP.osim
+[2026-01-23 16:12:37.648] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP.osim
+[2026-01-23 16:12:40.177] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_hip_flexion_r.sto (nr=2525 nc=87)
+[2026-01-23 16:12:40.304] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_hip_flexion_r.sto (nr=2525 nc=87)
+[2026-01-23 16:12:40.361] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_hip_adduction_r.sto (nr=2525 nc=87)
+[2026-01-23 16:12:40.490] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_hip_rotation_r.sto (nr=2525 nc=87)
+[2026-01-23 16:12:40.618] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_knee_angle_r.sto (nr=2525 nc=87)
+[2026-01-23 16:12:40.741] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_ankle_angle_r.sto (nr=2525 nc=87)
+[2026-01-23 16:12:40.862] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_subtalar_angle_r.sto (nr=2525 nc=87)
+[2026-01-23 16:12:40.983] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_mtp_angle_r.sto (nr=2525 nc=87)
+[2026-01-23 16:12:41.104] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_hip_flexion_l.sto (nr=2525 nc=87)
+[2026-01-23 16:12:41.286] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_hip_adduction_l.sto (nr=2525 nc=87)
+[2026-01-23 16:12:41.414] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_hip_rotation_l.sto (nr=2525 nc=87)
+[2026-01-23 16:12:41.544] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_knee_angle_l.sto (nr=2525 nc=87)
+[2026-01-23 16:12:41.666] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_ankle_angle_l.sto (nr=2525 nc=87)
+[2026-01-23 16:12:41.787] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_subtalar_angle_l.sto (nr=2525 nc=87)
+[2026-01-23 16:12:41.909] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_mtp_angle_l.sto (nr=2525 nc=87)
+[2026-01-23 16:12:42.044] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_Length.sto (nr=2525 nc=87)
+[2026-01-23 16:12:42.190] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_Length.sto (nr=2525 nc=87)
+[2026-01-23 16:12:53.503] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP.osim
+[2026-01-23 16:13:06.738] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP.osim
+[2026-01-23 16:13:43.408] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP.osim
+[2026-01-23 16:15:23.257] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP.osim
+[2026-01-23 16:15:47.848] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP.osim
