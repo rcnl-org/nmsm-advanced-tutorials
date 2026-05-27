@@ -1,15 +1,15 @@
 <NMSMPipelineDocument Version="1.4.0">
-	<DesignOptimizationTool name="default">
+	<VerificationOptimizationTool name="default">
 		<!--Directory used for writing results.-->
-		<results_directory>DOResults</results_directory>
+		<results_directory>VOResults2.5D</results_directory>
 		<!--Directory for optimizer initial guess.-->
-		<initial_guess_directory>..\VerificationOptimization\VOResults</initial_guess_directory>
+		<initial_guess_directory>TOResults2.5D</initial_guess_directory>
 		<!--Directory for files for the optimizer to track.-->
-		<tracked_quantities_directory>..\VerificationOptimization\VOResults</tracked_quantities_directory>
+		<tracked_quantities_directory>TOResults2.5D</tracked_quantities_directory>
 		<!--Name of the input model file (.osim) to use.-->
 		<input_model_file>..\UF_Subject_4_Scaled_JMP.osim</input_model_file>
 		<!--Name of the osimx model file.-->
-		<input_osimx_file>..\NeuralControlPersonalization\NCPResultsBilateral\UF_Subject_4_Scaled_JMP_gcp_mtp_mtp_ncp.osimx</input_osimx_file>
+		<input_osimx_file>..\UF_Subject_4_Scaled_JMP_gcp_mtp_mtp_ncp.osimx</input_osimx_file>
 		<!--Name of the optimal control solver settings file.-->
 		<optimal_control_solver_settings_file>..\gpopsSettings.xml</optimal_control_solver_settings_file>
 		<!--Name, excluding file type (.sto, .mot, etc), of the trial-->
@@ -46,16 +46,6 @@
 				<!--The accuracy to compare against, depends on model/data units (0.01 == 1cm for data in units meters).-->
 				<max_allowable_error>0.1</max_allowable_error>
 			</RCNLCostTerm>
-			<RCNLCostTerm name="coordinate tracking toes">
-				<!--Indicate whether the term is enabled or not. Default is false.-->
-				<is_enabled>true</is_enabled>
-				<!--Type of cost term.-->
-				<type>generalized_coordinate_tracking</type>
-				<!--Space separated list containing model coordinates to be included in this cost term.-->
-				<coordinate_list>mtp_angle_r mtp_angle_l</coordinate_list>
-				<!--The accuracy to compare against, depends on model/data units (0.01 == 1cm for data in units meters).-->
-				<max_allowable_error>0.1</max_allowable_error>
-			</RCNLCostTerm>
 			<RCNLCostTerm name="Pelvis translation tracking">
 				<!--Indicate whether the term is enabled or not. Default is false.-->
 				<is_enabled>true</is_enabled>
@@ -74,151 +64,17 @@
 				<!--Space separated list containing model coordinates to be included in this cost term.-->
 				<coordinate_list>pelvis_tilt</coordinate_list>
 				<!--The accuracy to compare against, depends on model/data units (0.01 == 1cm for data in units meters).-->
-				<max_allowable_error>0.05</max_allowable_error>								  
+				<max_allowable_error>0.05</max_allowable_error>
 			</RCNLCostTerm>
 			<RCNLCostTerm name="Synergy activation tracking">
 				<!--Indicate whether the term is enabled or not. Default is false.-->
-				<is_enabled>false</is_enabled>
+				<is_enabled>true</is_enabled>
 				<!--Type of cost term.-->
-				<type>controller_shape_tracking</type>
+				<type>controller_tracking</type>
 				<!--Space separated list containing muscles to be included in this cost term.-->
 				<controller_list>right_leg_1 right_leg_2 right_leg_3 right_leg_4 right_leg_5 left_leg_1 left_leg_2 left_leg_3 left_leg_4 left_leg_5</controller_list>
 				<!--The accuracy to compare against, depends on model/data units (0.01 == 1cm for data in units meters).-->
-				<max_allowable_error>0.5</max_allowable_error>
-			</RCNLCostTerm>
-			<RCNLCostTerm name="Synergy activation tracking">
-				<!--Indicate whether the term is enabled or not. Default is false.-->
-				<is_enabled>true</is_enabled>
-				<!--Type of cost term.-->
-				<type>controller_tracking</type>
-				<!--Space separated list containing muscles to be included in this cost term.-->
-				<controller_list>right_leg_1</controller_list>
-				<scale_factor>0.85</scale_factor>
-				<!--The accuracy to compare against, depends on model/data units (0.01 == 1cm for data in units meters).-->
-				<max_allowable_error>0.5</max_allowable_error>
-			</RCNLCostTerm>
-			<RCNLCostTerm name="Synergy activation tracking">
-				<!--Indicate whether the term is enabled or not. Default is false.-->
-				<is_enabled>true</is_enabled>
-				<!--Type of cost term.-->
-				<type>controller_tracking</type>
-				<!--Space separated list containing muscles to be included in this cost term.-->
-				<controller_list>left_leg_1</controller_list>
-				<scale_factor>1.275</scale_factor>
-				<!--The accuracy to compare against, depends on model/data units (0.01 == 1cm for data in units meters).-->
-				<max_allowable_error>0.5</max_allowable_error>
-			</RCNLCostTerm>
-			<RCNLCostTerm name="Synergy activation tracking">
-				<!--Indicate whether the term is enabled or not. Default is false.-->
-				<is_enabled>true</is_enabled>
-				<!--Type of cost term.-->
-				<type>controller_tracking</type>
-				<!--Space separated list containing muscles to be included in this cost term.-->
-				<controller_list>right_leg_2</controller_list>
-				<scale_factor>1.13</scale_factor>
-				<!--The accuracy to compare against, depends on model/data units (0.01 == 1cm for data in units meters).-->
-				<max_allowable_error>0.5</max_allowable_error>
-			</RCNLCostTerm>
-			<RCNLCostTerm name="Synergy activation tracking">
-				<!--Indicate whether the term is enabled or not. Default is false.-->
-				<is_enabled>true</is_enabled>
-				<!--Type of cost term.-->
-				<type>controller_tracking</type>
-				<!--Space separated list containing muscles to be included in this cost term.-->
-				<controller_list>left_leg_2</controller_list>
-				<scale_factor>0.9</scale_factor>
-				<!--The accuracy to compare against, depends on model/data units (0.01 == 1cm for data in units meters).-->
-				<max_allowable_error>0.5</max_allowable_error>
-			</RCNLCostTerm>
-			<RCNLCostTerm name="Synergy activation tracking">
-				<!--Indicate whether the term is enabled or not. Default is false.-->
-				<is_enabled>true</is_enabled>
-				<!--Type of cost term.-->
-				<type>controller_tracking</type>
-				<!--Space separated list containing muscles to be included in this cost term.-->
-				<controller_list>right_leg_3</controller_list>
-				<scale_factor>1.33</scale_factor>
-				<!--The accuracy to compare against, depends on model/data units (0.01 == 1cm for data in units meters).-->
-				<max_allowable_error>0.5</max_allowable_error>
-			</RCNLCostTerm>
-			<RCNLCostTerm name="Synergy activation tracking">
-				<!--Indicate whether the term is enabled or not. Default is false.-->
-				<is_enabled>true</is_enabled>
-				<!--Type of cost term.-->
-				<type>controller_tracking</type>
-				<!--Space separated list containing muscles to be included in this cost term.-->
-				<controller_list>left_leg_3</controller_list>
-				<scale_factor>0.8</scale_factor>
-				<!--The accuracy to compare against, depends on model/data units (0.01 == 1cm for data in units meters).-->
-				<max_allowable_error>0.5</max_allowable_error>
-			</RCNLCostTerm>
-			
-			<RCNLCostTerm name="Synergy activation tracking">
-				<!--Indicate whether the term is enabled or not. Default is false.-->
-				<is_enabled>true</is_enabled>
-				<!--Type of cost term.-->
-				<type>controller_tracking</type>
-				<!--Space separated list containing muscles to be included in this cost term.-->
-				<controller_list>right_leg_4</controller_list>
-				<scale_factor>1.15</scale_factor>
-				<!--The accuracy to compare against, depends on model/data units (0.01 == 1cm for data in units meters).-->
-				<max_allowable_error>0.5</max_allowable_error>
-			</RCNLCostTerm>
-			<RCNLCostTerm name="Synergy activation tracking">
-				<!--Indicate whether the term is enabled or not. Default is false.-->
-				<is_enabled>true</is_enabled>
-				<!--Type of cost term.-->
-				<type>controller_tracking</type>
-				<!--Space separated list containing muscles to be included in this cost term.-->
-				<controller_list>left_leg_4</controller_list>
-				<scale_factor>0.81</scale_factor>
-				<!--The accuracy to compare against, depends on model/data units (0.01 == 1cm for data in units meters).-->
-				<max_allowable_error>0.5</max_allowable_error>
-			</RCNLCostTerm>
-			
-			<RCNLCostTerm name="Synergy activation tracking">
-				<!--Indicate whether the term is enabled or not. Default is false.-->
-				<is_enabled>true</is_enabled>
-				<!--Type of cost term.-->
-				<type>controller_tracking</type>
-				<!--Space separated list containing muscles to be included in this cost term.-->
-				<controller_list>right_leg_5</controller_list>
-				<scale_factor>1</scale_factor>
-				<!--The accuracy to compare against, depends on model/data units (0.01 == 1cm for data in units meters).-->
-				<max_allowable_error>0.5</max_allowable_error>
-			</RCNLCostTerm>
-			<RCNLCostTerm name="Synergy activation tracking">
-				<!--Indicate whether the term is enabled or not. Default is false.-->
-				<is_enabled>true</is_enabled>
-				<!--Type of cost term.-->
-				<type>controller_tracking</type>
-				<!--Space separated list containing muscles to be included in this cost term.-->
-				<controller_list>left_leg_5</controller_list>
-				<scale_factor>1</scale_factor>
-				<!--The accuracy to compare against, depends on model/data units (0.01 == 1cm for data in units meters).-->
-				<max_allowable_error>0.5</max_allowable_error>
-			</RCNLCostTerm>
-			<RCNLCostTerm name="Braking impulse">
-				<!--Indicate whether the term is enabled or not. Default is false.-->
-				<is_enabled>true</is_enabled>
-				<!--Type of cost term.-->
-				<type>braking_impulse_goal</type>
-				<!--Space separated list containing muscles to be included in this cost term.-->
-				<hindfoot_body_list>calcn_r calcn_l</hindfoot_body_list>
-				<error_center>10.8</error_center>
-				<!--The accuracy to compare against, depends on model/data units (0.01 == 1cm for data in units meters).-->
-				<max_allowable_error>4.2</max_allowable_error>
-			</RCNLCostTerm>
-			<RCNLCostTerm name="Propulsive impulse">
-				<!--Indicate whether the term is enabled or not. Default is false.-->
-				<is_enabled>true</is_enabled>
-				<!--Type of cost term.-->
-				<type>propulsive_impulse_goal</type>
-				<!--Space separated list containing muscles to be included in this cost term.-->
-				<hindfoot_body_list>calcn_r calcn_l</hindfoot_body_list>
-				<error_center>10.8</error_center>
-				<!--The accuracy to compare against, depends on model/data units (0.01 == 1cm for data in units meters).-->
-				<max_allowable_error>4.2</max_allowable_error>
+				<max_allowable_error>0.1</max_allowable_error>
 			</RCNLCostTerm>
 		</RCNLCostTermSet>
 		<!--Set of constraint terms applied to this optimization. For a full list of constraint terms, see documentation at nmsm.rice.edu.-->
@@ -229,7 +85,7 @@
 				<!--Type of constraint term.-->
 				<type>kinetic_consistency</type>
 				<!--Space separated list containing model loads to be included in this cost term.-->
-				<load_list>hip_flexion_r_moment hip_adduction_r_moment hip_rotation_r_moment knee_angle_r_moment ankle_angle_r_moment subtalar_angle_r_moment hip_flexion_l_moment hip_adduction_l_moment hip_rotation_l_moment knee_angle_l_moment ankle_angle_l_moment subtalar_angle_l_moment</load_list>
+				<load_list>hip_flexion_r_moment knee_angle_r_moment ankle_angle_r_moment subtalar_angle_r_moment hip_flexion_l_moment knee_angle_l_moment ankle_angle_l_moment subtalar_angle_l_moment</load_list>
 				<!--Maximum error allowed by this constraint term.-->
 				<max_error>0.10000000000000001</max_error>
 				<!--Minimum error allowed by this constraint term.-->
@@ -247,6 +103,18 @@
 				<!--Minimum error allowed by this constraint term.-->
 				<min_error>-5</min_error>
 			</RCNLConstraintTerm>
+			<RCNLConstraintTerm name="Position periodicity translation">
+				<!--Flag (true, false) indicating whether this contraint term is enabled. Default is false.-->
+				<is_enabled>true</is_enabled>
+				<!--Type of constraint term.-->
+				<type>generalized_coordinate_periodicity</type>
+				<!--Space separated list containing model loads to be included in this cost term.-->
+				<coordinate_list>pelvis_tx pelvis_ty</coordinate_list>
+				<!--Maximum error allowed by this constraint term.-->
+				<max_error>0.1</max_error>
+				<!--Minimum error allowed by this constraint term.-->
+				<min_error>-0.1</min_error>
+			</RCNLConstraintTerm>
 			<RCNLConstraintTerm name="Position periodicity rotation">
 				<!--Flag (true, false) indicating whether this contraint term is enabled. Default is false.-->
 				<is_enabled>true</is_enabled>
@@ -259,17 +127,29 @@
 				<!--Minimum error allowed by this constraint term.-->
 				<min_error>-0.1</min_error>
 			</RCNLConstraintTerm>
-			<RCNLConstraintTerm name="translational coordinate periodicity">
+			<RCNLConstraintTerm name="Speed periodicity translation">
 				<!--Flag (true, false) indicating whether this contraint term is enabled. Default is false.-->
 				<is_enabled>true</is_enabled>
 				<!--Type of constraint term.-->
-				<type>generalized_coordinate_periodicity</type>
-				<!--Space separated list containing model coordinates to be included in this cost term.-->
+				<type>generalized_speed_periodicity</type>
+				<!--Space separated list containing model loads to be included in this cost term.-->
 				<coordinate_list>pelvis_tx pelvis_ty</coordinate_list>
 				<!--Maximum error allowed by this constraint term.-->
-				<max_error>0.01</max_error>
+				<max_error>1</max_error>
 				<!--Minimum error allowed by this constraint term.-->
-				<min_error>-0.01</min_error>
+				<min_error>-1</min_error>
+			</RCNLConstraintTerm>
+			<RCNLConstraintTerm name="Speed periodicity rotation">
+				<!--Flag (true, false) indicating whether this contraint term is enabled. Default is false.-->
+				<is_enabled>true</is_enabled>
+				<!--Type of constraint term.-->
+				<type>generalized_speed_periodicity</type>
+				<!--Space separated list containing model loads to be included in this cost term.-->
+				<coordinate_list>pelvis_tilt hip_flexion_r knee_angle_r ankle_angle_r subtalar_angle_r hip_flexion_l knee_angle_l ankle_angle_l subtalar_angle_l lumbar_extension arm_flex_r elbow_flex_r arm_flex_l elbow_flex_l</coordinate_list>
+				<!--Maximum error allowed by this constraint term.-->
+				<max_error>1</max_error>
+				<!--Minimum error allowed by this constraint term.-->
+				<min_error>-1</min_error>
 			</RCNLConstraintTerm>
 			<RCNLConstraintTerm name="External force periodicity">
 				<!--Flag (true, false) indicating whether this contraint term is enabled. Default is false.-->
@@ -295,30 +175,6 @@
 				<!--Minimum error allowed by this constraint term.-->
 				<min_error>-1</min_error>
 			</RCNLConstraintTerm>
-			<RCNLConstraintTerm name="Speed periodicity rotation">
-				<!--Flag (true, false) indicating whether this contraint term is enabled. Default is false.-->
-				<is_enabled>true</is_enabled>
-				<!--Type of constraint term.-->
-				<type>generalized_speed_periodicity</type>
-				<!--Space separated list containing model loads to be included in this cost term.-->
-				<coordinate_list>pelvis_tilt hip_flexion_r knee_angle_r ankle_angle_r subtalar_angle_r hip_flexion_l knee_angle_l ankle_angle_l subtalar_angle_l lumbar_extension arm_flex_r elbow_flex_r arm_flex_l elbow_flex_l</coordinate_list>
-				<!--Maximum error allowed by this constraint term.-->
-				<max_error>1</max_error>
-				<!--Minimum error allowed by this constraint term.-->
-				<min_error>-1</min_error>
-			</RCNLConstraintTerm>
-			<RCNLConstraintTerm name="translational speed periodicity">
-				<!--Flag (true, false) indicating whether this contraint term is enabled. Default is false.-->
-				<is_enabled>true</is_enabled>
-				<!--Type of constraint term.-->
-				<type>generalized_speed_periodicity</type>
-				<!--Space separated list containing model coordinates to be included in this cost term.-->
-				<coordinate_list>pelvis_tx pelvis_ty</coordinate_list>
-				<!--Maximum error allowed by this constraint term.-->
-				<max_error>0.01</max_error>
-				<!--Minimum error allowed by this constraint term.-->
-				<min_error>-0.01</min_error>
-			</RCNLConstraintTerm>
 			<RCNLConstraintTerm name="Initial Coordinate Deviation">
 				<!--Flag (true, false) indicating whether this contraint term is enabled. Default is false.-->
 				<is_enabled>true</is_enabled>
@@ -327,9 +183,9 @@
 				<!--Space separated list containing model coordinates to be included in this cost term.-->
 				<coordinate_list>pelvis_tilt hip_flexion_r knee_angle_r ankle_angle_r subtalar_angle_r hip_flexion_l knee_angle_l ankle_angle_l subtalar_angle_l lumbar_extension arm_flex_r elbow_flex_r arm_flex_l elbow_flex_l</coordinate_list>
 				<!--Maximum error allowed by this constraint term.-->
-				<max_error>0.01</max_error>
+				<max_error>0.1</max_error>
 				<!--Minimum error allowed by this constraint term.-->
-				<min_error>-0.01</min_error>
+				<min_error>-0.1</min_error>
 			</RCNLConstraintTerm>
 			<RCNLConstraintTerm name="Initial Speed Deviation">
 				<!--Flag (true, false) indicating whether this contraint term is enabled. Default is false.-->
@@ -342,30 +198,6 @@
 				<max_error>0.1</max_error>
 				<!--Minimum error allowed by this constraint term.-->
 				<min_error>-0.1</min_error>
-			</RCNLConstraintTerm>
-			<RCNLConstraintTerm name="Initial Coordinate Deviation">
-				<!--Flag (true, false) indicating whether this contraint term is enabled. Default is false.-->
-				<is_enabled>true</is_enabled>
-				<!--Type of constraint term.-->
-				<type>initial_generalized_coordinate_deviation</type>
-				<!--Space separated list containing model coordinates to be included in this cost term.-->
-				<coordinate_list>pelvis_tx pelvis_ty</coordinate_list>
-				<!--Maximum error allowed by this constraint term.-->
-				<max_error>0.001</max_error>
-				<!--Minimum error allowed by this constraint term.-->
-				<min_error>-0.001</min_error>
-			</RCNLConstraintTerm>
-			<RCNLConstraintTerm name="Initial Speed Deviation">
-				<!--Flag (true, false) indicating whether this contraint term is enabled. Default is false.-->
-				<is_enabled>true</is_enabled>
-				<!--Type of constraint term.-->
-				<type>initial_generalized_speed_deviation</type>
-				<!--Space separated list containing model coordinates to be included in this cost term.-->
-				<coordinate_list>pelvis_tx pelvis_ty</coordinate_list>
-				<!--Maximum error allowed by this constraint term.-->
-				<max_error>0.01</max_error>
-				<!--Minimum error allowed by this constraint term.-->
-				<min_error>-0.01</min_error>
 			</RCNLConstraintTerm>
 			<RCNLConstraintTerm name="Ground Reaction Forces Swing Phase 1">
 				<!--Flag (true, false) indicating whether this contraint term is enabled. Default is false.-->
@@ -420,5 +252,5 @@
 				<time_ranges>0.7 1</time_ranges>
 			</RCNLConstraintTerm>
 		</RCNLConstraintTermSet>
-	</DesignOptimizationTool>
+	</VerificationOptimizationTool>
 </NMSMPipelineDocument>
