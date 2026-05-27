@@ -1,0 +1,371 @@
+<NMSMPipelineDocument Version="1.4.0">
+	<DesignOptimizationTool name="default">
+		<!--Directory used for writing results.-->
+		<results_directory>doResultsHTO9</results_directory>
+		<!--Directory for optimizer initial guess.-->
+		<initial_guess_directory>voResultsHTO</initial_guess_directory>
+		<!--Directory for files for the optimizer to track.-->
+		<tracked_quantities_directory>voResultsHTO</tracked_quantities_directory>
+		<!--Name of the input model file (.osim) to use.-->
+		<input_model_file>Full_Body_Walking_Model-Post_JMP_HTO9.osim</input_model_file>
+		<!--Name of the osimx model file.-->
+		<input_osimx_file>Full_Body_Walking_Model-Post_GCP.osimx</input_osimx_file>
+		<!--Name of the optimal control solver settings file.-->
+		<optimal_control_solver_settings_file>gpopsSettings.xml</optimal_control_solver_settings_file>
+		<!--Name, excluding file type (.sto, .mot, etc), of the trial-->
+		<trial_name>Trial12_Gait</trial_name>
+		<!--Space separated list of coordinates to be considered GPOPS2 states. Not including a coordinate prescribes it.-->
+		<states_coordinate_list>pelvis_tilt pelvis_list pelvis_rotation pelvis_tx pelvis_ty pelvis_tz hip_flexion_r hip_adduction_r hip_rotation_r knee_angle_r ankle_angle_r subtalar_angle_r mtp_angle_r hip_flexion_l hip_adduction_l hip_rotation_l knee_angle_l ankle_angle_l subtalar_angle_l mtp_angle_l lumbar_extension lumbar_bending lumbar_rotation arm_flex_r arm_add_r arm_rot_r elbow_flex_r arm_flex_l arm_add_l arm_rot_l elbow_flex_l</states_coordinate_list>
+		<!--*Optional* Default is 2.-->
+		<joint_position_range_scale_factor>1.5</joint_position_range_scale_factor>
+		<!--*Optional* Default is 1.5.-->
+		<joint_velocity_range_scale_factor>1.25</joint_velocity_range_scale_factor>
+		<!--*Optional* Default is 1.-->
+		<joint_acceleration_range_scale_factor>1</joint_acceleration_range_scale_factor>
+		<!--Set of torque controls for GPOPS2.-->
+		<RCNLTorqueController>
+			<!--Space separated list containing the coordinates controlled by the torque controller.-->
+			<coordinate_list>hip_flexion_r hip_adduction_r hip_rotation_r knee_angle_r ankle_angle_r subtalar_angle_r hip_flexion_l hip_adduction_l hip_rotation_l knee_angle_l ankle_angle_l subtalar_angle_l</coordinate_list>
+		</RCNLTorqueController>
+		<!--Set of cost terms used for this optimization. For a full list of cost terms, see documentation at nmsm.rice.edu.-->
+		<RCNLCostTermSet>
+			<RCNLCostTerm name="Controller tracking">
+				<!--Indicate whether the term is enabled or not. Default is false.-->
+				<is_enabled>true</is_enabled>
+				<!--Type of cost term.-->
+				<type>controller_tracking</type>
+				<!--Space separated list containing RCNL controllers to be included in this cost term.-->
+				<controller_list>hip_flexion_r hip_adduction_r hip_rotation_r knee_angle_r ankle_angle_r subtalar_angle_r hip_flexion_l hip_adduction_l hip_rotation_l knee_angle_l ankle_angle_l subtalar_angle_l</controller_list>
+				<!--The accuracy to compare against, depends on model/data units (0.01 == 1cm for data in units meters).-->
+				<max_allowable_error>10</max_allowable_error>
+			</RCNLCostTerm>
+			<RCNLCostTerm name="Generalized coordinate tracking toe rotations">
+				<!--Indicate whether the term is enabled or not. Default is false.-->
+				<is_enabled>true</is_enabled>
+				<!--Type of cost term.-->
+				<type>generalized_coordinate_tracking</type>
+				<!--Space separated list containing model coordinates to be included in this cost term.-->
+				<coordinate_list>mtp_angle_r mtp_angle_l</coordinate_list>
+				<!--The accuracy to compare against, depends on model/data units (0.01 == 1cm for data in units meters).-->
+				<max_allowable_error>0.0873</max_allowable_error>
+			</RCNLCostTerm>
+			<RCNLCostTerm name="Generalized coordinate tracking lumbar extension">
+				<!--Indicate whether the term is enabled or not. Default is false.-->
+				<is_enabled>true</is_enabled>
+				<!--Type of cost term.-->
+				<type>generalized_coordinate_tracking</type>
+				<!--Space separated list containing model coordinates to be included in this cost term.-->
+				<coordinate_list>lumbar_extension</coordinate_list>
+				<!--The accuracy to compare against, depends on model/data units (0.01 == 1cm for data in units meters).-->
+				<max_allowable_error>0.6981</max_allowable_error>
+			</RCNLCostTerm>
+			<RCNLCostTerm name="Generalized coordinate tracking upper body rotations">
+				<!--Indicate whether the term is enabled or not. Default is false.-->
+				<is_enabled>true</is_enabled>
+				<!--Type of cost term.-->
+				<type>generalized_coordinate_tracking</type>
+				<!--Space separated list containing model coordinates to be included in this cost term.-->
+				<coordinate_list>lumbar_bending lumbar_rotation arm_flex_r arm_add_r arm_rot_r elbow_flex_r arm_flex_l arm_add_l arm_rot_l elbow_flex_l</coordinate_list>
+				<!--The accuracy to compare against, depends on model/data units (0.01 == 1cm for data in units meters).-->
+				<max_allowable_error>0.3491</max_allowable_error>
+			</RCNLCostTerm>
+			<RCNLCostTerm name="Generalized speed tracking toe rotations">
+				<!--Indicate whether the term is enabled or not. Default is false.-->
+				<is_enabled>false</is_enabled>
+				<!--Type of cost term.-->
+				<type>generalized_speed_tracking</type>
+				<!--Space separated list containing model coordinates to be included in this cost term.-->
+				<coordinate_list>mtp_angle_r mtp_angle_l</coordinate_list>
+				<!--The accuracy to compare against, depends on model/data units (0.01 == 1cm for data in units meters).-->
+				<max_allowable_error>0.8727</max_allowable_error>
+			</RCNLCostTerm>
+			<RCNLCostTerm name="Generalized speed tracking upper body rotations">
+				<!--Indicate whether the term is enabled or not. Default is false.-->
+				<is_enabled>false</is_enabled>
+				<!--Type of cost term.-->
+				<type>generalized_speed_tracking</type>
+				<!--Space separated list containing model coordinates to be included in this cost term.-->
+				<coordinate_list>lumbar_extension lumbar_bending lumbar_rotation arm_flex_r arm_add_r arm_rot_r elbow_flex_r arm_flex_l arm_add_l arm_rot_l elbow_flex_l</coordinate_list>
+				<!--The accuracy to compare against, depends on model/data units (0.01 == 1cm for data in units meters).-->
+				<max_allowable_error>3.4907</max_allowable_error>
+			</RCNLCostTerm>
+			<RCNLCostTerm name="Marker position tracking">
+				<!--Indicate whether the term is enabled or not. Default is false.-->
+				<is_enabled>false</is_enabled>
+				<!--Type of cost term.-->
+				<type>marker_position_tracking</type>
+				<!--Space separated list containing markers to be included in this cost term.-->
+				<marker_list>R_Heel L_Heel</marker_list>
+				<!--Space separated list containing axes (x y z) of the cost term.-->
+				<axes>x z</axes>
+				<!--The accuracy to compare against, depends on model/data units (0.01 == 1cm for data in units meters).-->
+				<max_allowable_error>0.005</max_allowable_error>
+			</RCNLCostTerm>
+			<RCNLCostTerm name="Marker velocity tracking">
+				<!--Indicate whether the term is enabled or not. Default is false.-->
+				<is_enabled>false</is_enabled>
+				<!--Type of cost term.-->
+				<type>marker_velocity_tracking</type>
+				<!--Space separated list containing markers to be included in this cost term.-->
+				<marker_list>R_Heel L_Heel</marker_list>
+				<!--Space separated list containing axes (x y z) of the cost term.-->
+				<axes>x y z</axes>
+				<!--The accuracy to compare against, depends on model/data units (0.01 == 1cm for data in units meters).-->
+				<max_allowable_error>0.05</max_allowable_error>
+			</RCNLCostTerm>
+			<RCNLCostTerm name="Body orientation tracking">
+				<!--Indicate whether the term is enabled or not. Default is false.-->
+				<is_enabled>false</is_enabled>
+				<!--Type of cost term.-->
+				<type>body_orientation_tracking</type>
+				<!--Space separated list containing markers to be included in this cost term.-->
+				<body_list>calcn_r calcn_l torso</body_list>
+				<!--Space separated list containing axes (x y z) of the cost term.-->
+				<axes>x y z</axes>
+				<!--Rotation sequence used to define the body orientation.-->
+				<sequence>yxz</sequence>
+				<!--The accuracy to compare against, depends on model/data units (0.01 == 1cm for data in units meters).-->
+				<max_allowable_error>0.0873</max_allowable_error>
+			</RCNLCostTerm>
+			<RCNLCostTerm name="Inverse dynamics load tracking">
+				<!--Indicate whether the term is enabled or not. Default is false.-->
+				<is_enabled>false</is_enabled>
+				<!--Type of cost term.-->
+				<type>inverse_dynamics_load_tracking</type>
+				<!--Space separated list containing model loads to be included in this cost term.-->
+				<load_list>hip_flexion_r_moment hip_adduction_r_moment hip_rotation_r_moment knee_angle_r_moment ankle_angle_r_moment subtalar_angle_r_moment hip_flexion_l_moment hip_adduction_l_moment hip_rotation_l_moment knee_angle_l_moment ankle_angle_l_moment subtalar_angle_l_moment</load_list>
+				<!--The accuracy to compare against, depends on model/data units (0.01 == 1cm for data in units meters).-->
+				<max_allowable_error>10</max_allowable_error>
+			</RCNLCostTerm>
+			<RCNLCostTerm name="External force tracking">
+				<!--Indicate whether the term is enabled or not. Default is false.-->
+				<is_enabled>false</is_enabled>
+				<!--Type of cost term.-->
+				<type>external_force_tracking</type>
+				<!--Space separated list containing external forces to be included in this cost term.-->
+				<force_list>ground_force_2_vx ground_force_2_vy ground_force_2_vz ground_force_1_vx ground_force_1_vy ground_force_1_vz</force_list>
+				<!--The accuracy to compare against, depends on model/data units (0.01 == 1cm for data in units meters).-->
+				<max_allowable_error>40</max_allowable_error>
+			</RCNLCostTerm>
+			<RCNLCostTerm name="External moment tracking">
+				<!--Indicate whether the term is enabled or not. Default is false.-->
+				<is_enabled>false</is_enabled>
+				<!--Type of cost term.-->
+				<type>external_moment_tracking</type>
+				<!--Space separated list containing external moments to be included in this cost term.-->
+				<moment_list>ground_moment_2_mx ground_moment_2_my ground_moment_2_mz ground_moment_1_mx ground_moment_1_my ground_moment_1_mz</moment_list>
+				<!--The accuracy to compare against, depends on model/data units (0.01 == 1cm for data in units meters).-->
+				<max_allowable_error>10</max_allowable_error>
+			</RCNLCostTerm>
+		</RCNLCostTermSet>
+		<!--Set of constraint terms applied to this optimization. For a full list of constraint terms, see documentation at nmsm.rice.edu.-->
+		<RCNLConstraintTermSet>
+			<RCNLConstraintTerm name="Generalized coordinate periodicity pelvis translations">
+				<!--Flag (true, false) indicating whether this contraint term is enabled. Default is false.-->
+				<is_enabled>true</is_enabled>
+				<!--Type of constraint term.-->
+				<type>generalized_coordinate_periodicity</type>
+				<!--Space separated list containing model coordinates to be included in this cost term.-->
+				<coordinate_list>pelvis_tx pelvis_ty pelvis_tz</coordinate_list>
+				<!--Maximum error allowed by this constraint term.-->
+				<max_error>0.01</max_error>
+				<!--Minimum error allowed by this constraint term.-->
+				<min_error>-0.01</min_error>
+			</RCNLConstraintTerm>
+			<RCNLConstraintTerm name="Generalized coordinate periodicity lower body rotations">
+				<!--Flag (true, false) indicating whether this contraint term is enabled. Default is false.-->
+				<is_enabled>true</is_enabled>
+				<!--Type of constraint term.-->
+				<type>generalized_coordinate_periodicity</type>
+				<!--Space separated list containing model coordinates to be included in this cost term.-->
+				<coordinate_list>pelvis_tilt pelvis_list pelvis_rotation hip_flexion_r hip_adduction_r hip_rotation_r knee_angle_r ankle_angle_r subtalar_angle_r mtp_angle_r hip_flexion_l hip_adduction_l hip_rotation_l knee_angle_l ankle_angle_l subtalar_angle_l mtp_angle_l</coordinate_list>
+				<!--Maximum error allowed by this constraint term.-->
+				<max_error>0.0175</max_error>
+				<!--Minimum error allowed by this constraint term.-->
+				<min_error>-0.0175</min_error>
+			</RCNLConstraintTerm>
+			<RCNLConstraintTerm name="Generalized coordinate periodicity upper body rotations">
+				<!--Flag (true, false) indicating whether this contraint term is enabled. Default is false.-->
+				<is_enabled>true</is_enabled>
+				<!--Type of constraint term.-->
+				<type>generalized_coordinate_periodicity</type>
+				<!--Space separated list containing model coordinates to be included in this cost term.-->
+				<coordinate_list>lumbar_extension lumbar_bending lumbar_rotation arm_flex_r arm_add_r arm_rot_r elbow_flex_r arm_flex_l arm_add_l arm_rot_l elbow_flex_l</coordinate_list>
+				<!--Maximum error allowed by this constraint term.-->
+				<max_error>0.0175</max_error>
+				<!--Minimum error allowed by this constraint term.-->
+				<min_error>-0.0175</min_error>
+			</RCNLConstraintTerm>
+			<RCNLConstraintTerm name="Generalized speed periodicity pelvis translations">
+				<!--Flag (true, false) indicating whether this contraint term is enabled. Default is false.-->
+				<is_enabled>true</is_enabled>
+				<!--Type of constraint term.-->
+				<type>generalized_speed_periodicity</type>
+				<!--Space separated list containing model coordinates to be included in this cost term.-->
+				<coordinate_list>pelvis_tx pelvis_ty pelvis_tz</coordinate_list>
+				<!--Maximum error allowed by this constraint term.-->
+				<max_error>0.1</max_error>
+				<!--Minimum error allowed by this constraint term.-->
+				<min_error>-0.1</min_error>
+			</RCNLConstraintTerm>
+			<RCNLConstraintTerm name="Generalized speed periodicity lower body rotations">
+				<!--Flag (true, false) indicating whether this contraint term is enabled. Default is false.-->
+				<is_enabled>true</is_enabled>
+				<!--Type of constraint term.-->
+				<type>generalized_speed_periodicity</type>
+				<!--Space separated list containing model coordinates to be included in this cost term.-->
+				<coordinate_list>pelvis_tilt pelvis_list pelvis_rotation hip_flexion_r hip_adduction_r hip_rotation_r knee_angle_r ankle_angle_r subtalar_angle_r mtp_angle_r hip_flexion_l hip_adduction_l hip_rotation_l knee_angle_l ankle_angle_l subtalar_angle_l mtp_angle_l</coordinate_list>
+				<!--Maximum error allowed by this constraint term.-->
+				<max_error>0.0873</max_error>
+				<!--Minimum error allowed by this constraint term.-->
+				<min_error>-0.0873</min_error>
+			</RCNLConstraintTerm>
+			<RCNLConstraintTerm name="Generalized speed periodicity upper body rotations">
+				<!--Flag (true, false) indicating whether this contraint term is enabled. Default is false.-->
+				<is_enabled>true</is_enabled>
+				<!--Type of constraint term.-->
+				<type>generalized_speed_periodicity</type>
+				<!--Space separated list containing model coordinates to be included in this cost term.-->
+				<coordinate_list>lumbar_extension lumbar_bending lumbar_rotation arm_flex_r arm_add_r arm_rot_r elbow_flex_r arm_flex_l arm_add_l arm_rot_l elbow_flex_l</coordinate_list>
+				<!--Maximum error allowed by this constraint term.-->
+				<max_error>0.0873</max_error>
+				<!--Minimum error allowed by this constraint term.-->
+				<min_error>-0.0873</min_error>
+			</RCNLConstraintTerm>
+			<RCNLConstraintTerm name="Marker position periodicity">
+				<!--Flag (true, false) indicating whether this contraint term is enabled. Default is false.-->
+				<is_enabled>false</is_enabled>
+				<!--Type of constraint term.-->
+				<type>marker_position_periodicity</type>
+				<!--Space separated list containing markers to be included in this cost term.-->
+				<marker_list>R_Heel L_Heel</marker_list>
+				<!--Space separated list containing axes (x y z) of the cost term.-->
+				<axes>x y z</axes>
+				<!--Maximum error allowed by this constraint term.-->
+				<max_error>0.0025</max_error>
+				<!--Minimum error allowed by this constraint term.-->
+				<min_error>-0.0025</min_error>
+			</RCNLConstraintTerm>
+			<RCNLConstraintTerm name="Marker velocity periodicity">
+				<!--Flag (true, false) indicating whether this contraint term is enabled. Default is false.-->
+				<is_enabled>false</is_enabled>
+				<!--Type of constraint term.-->
+				<type>marker_velocity_periodicity</type>
+				<!--Space separated list containing markers to be included in this cost term.-->
+				<marker_list>R_Heel L_Heel</marker_list>
+				<!--Space separated list containing axes (x y z) of the cost term.-->
+				<axes>x y z</axes>
+				<!--Maximum error allowed by this constraint term.-->
+				<max_error>0.025</max_error>
+				<!--Minimum error allowed by this constraint term.-->
+				<min_error>-0.025</min_error>
+			</RCNLConstraintTerm>
+			<RCNLConstraintTerm name="Marker position deviation">
+				<!--Flag (true, false) indicating whether this contraint term is enabled. Default is false.-->
+				<is_enabled>false</is_enabled>
+				<!--Type of constraint term.-->
+				<type>marker_position_deviation</type>
+				<!--Space separated list containing markers to be included in this cost term.-->
+				<marker_list>R_Heel L_Heel</marker_list>
+				<!--Space separated list containing axes (x y z) of the cost term.-->
+				<axes>x y z</axes>
+				<!--Maximum error allowed by this constraint term.-->
+				<max_error>0.02</max_error>
+				<!--Minimum error allowed by this constraint term.-->
+				<min_error>-0.02</min_error>
+			</RCNLConstraintTerm>
+			<RCNLConstraintTerm name="Body orientation periodicity">
+				<!--Flag (true, false) indicating whether this contraint term is enabled. Default is false.-->
+				<is_enabled>false</is_enabled>
+				<!--Type of constraint term.-->
+				<type>body_orientation_periodicity</type>
+				<!--Space separated list containing markers to be included in this cost term.-->
+				<body_list>calcn_r calcn_l torso</body_list>
+				<!--Space separated list containing axes (x y z) of the cost term.-->
+				<axes>x y z</axes>
+				<!--Rotation sequence used to define the body orientation.-->
+				<sequence>yxz</sequence>
+				<!--Maximum error allowed by this constraint term.-->
+				<max_error>0.0436</max_error>
+				<!--Minimum error allowed by this constraint term.-->
+				<min_error>-0.0436</min_error>
+			</RCNLConstraintTerm>
+			<RCNLConstraintTerm name="Body orientation deviation">
+				<!--Flag (true, false) indicating whether this contraint term is enabled. Default is false.-->
+				<is_enabled>false</is_enabled>
+				<!--Type of constraint term.-->
+				<type>body_orientation_deviation</type>
+				<!--Space separated list containing markers to be included in this cost term.-->
+				<body_list>calcn_r calcn_l torso</body_list>
+				<!--Space separated list containing axes (x y z) of the cost term.-->
+				<axes>x y z</axes>
+				<!--Rotation sequence used to define the body orientation.-->
+				<sequence>yxz</sequence>
+				<!--Maximum error allowed by this constraint term.-->
+				<max_error>0.0873</max_error>
+				<!--Minimum error allowed by this constraint term.-->
+				<min_error>-0.0873</min_error>
+			</RCNLConstraintTerm>
+			<RCNLConstraintTerm name="Kinetic consistency">
+				<!--Flag (true, false) indicating whether this contraint term is enabled. Default is false.-->
+				<is_enabled>true</is_enabled>
+				<!--Type of constraint term.-->
+				<type>kinetic_consistency</type>
+				<!--Space separated list containing model loads to be included in this cost term.-->
+				<load_list>hip_flexion_r_moment hip_adduction_r_moment hip_rotation_r_moment knee_angle_r_moment ankle_angle_r_moment subtalar_angle_r_moment hip_flexion_l_moment hip_adduction_l_moment hip_rotation_l_moment knee_angle_l_moment ankle_angle_l_moment subtalar_angle_l_moment</load_list>
+				<!--Maximum error allowed by this constraint term.-->
+				<max_error>0.1</max_error>
+				<!--Minimum error allowed by this constraint term.-->
+				<min_error>-0.1</min_error>
+			</RCNLConstraintTerm>
+			<RCNLConstraintTerm name="Root segment residual load forces">
+				<!--Flag (true, false) indicating whether this contraint term is enabled. Default is false.-->
+				<is_enabled>true</is_enabled>
+				<!--Type of constraint term.-->
+				<type>root_segment_residual_load</type>
+				<!--Space separated list containing model loads to be included in this cost term.-->
+				<load_list>pelvis_tx_force pelvis_ty_force pelvis_tz_force</load_list>
+				<!--Maximum error allowed by this constraint term.-->
+				<max_error>1</max_error>
+				<!--Minimum error allowed by this constraint term.-->
+				<min_error>-1</min_error>
+			</RCNLConstraintTerm>
+			<RCNLConstraintTerm name="Root segment residual load moments">
+				<!--Flag (true, false) indicating whether this contraint term is enabled. Default is false.-->
+				<is_enabled>true</is_enabled>
+				<!--Type of constraint term.-->
+				<type>root_segment_residual_load</type>
+				<!--Space separated list containing model loads to be included in this cost term.-->
+				<load_list>pelvis_tilt_moment pelvis_list_moment pelvis_rotation_moment</load_list>
+				<!--Maximum error allowed by this constraint term.-->
+				<max_error>0.1</max_error>
+				<!--Minimum error allowed by this constraint term.-->
+				<min_error>-0.1</min_error>
+			</RCNLConstraintTerm>
+			<RCNLConstraintTerm name="External force periodicity">
+				<!--Flag (true, false) indicating whether this contraint term is enabled. Default is false.-->
+				<is_enabled>true</is_enabled>
+				<!--Type of constraint term.-->
+				<type>external_force_periodicity</type>
+				<!--Space separated list containing external forces to be included in this cost term.-->
+				<force_list>ground_force_2_vx ground_force_2_vy ground_force_2_vz ground_force_1_vx ground_force_1_vy ground_force_1_vz</force_list>
+				<!--Maximum error allowed by this constraint term.-->
+				<max_error>5</max_error>
+				<!--Minimum error allowed by this constraint term.-->
+				<min_error>-5</min_error>
+			</RCNLConstraintTerm>
+			<RCNLConstraintTerm name="External moment periodicity">
+				<!--Flag (true, false) indicating whether this contraint term is enabled. Default is false.-->
+				<is_enabled>true</is_enabled>
+				<!--Type of constraint term.-->
+				<type>external_moment_periodicity</type>
+				<!--Space separated list containing external moments to be included in this cost term.-->
+				<moment_list>ground_moment_2_mx ground_moment_2_my ground_moment_2_mz ground_moment_1_mx ground_moment_1_my ground_moment_1_mz</moment_list>
+				<!--Maximum error allowed by this constraint term.-->
+				<max_error>1</max_error>
+				<!--Minimum error allowed by this constraint term.-->
+				<min_error>-1</min_error>
+			</RCNLConstraintTerm>
+		</RCNLConstraintTermSet>
+	</DesignOptimizationTool>
+</NMSMPipelineDocument>

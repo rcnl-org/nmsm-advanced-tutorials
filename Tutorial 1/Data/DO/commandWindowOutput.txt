@@ -1,0 +1,185 @@
+ ___________________________________________________________________ 
+|                                                                   |
+|            __________  ____  ____  _____        ________          |
+|           / ____/ __ \/ __ \/ __ \/ ___/       /  _/  _/          |
+|          / / __/ /_/ / / / / /_/ /\__ \ _____  / / / /            |
+|         / /_/ / ____/ /_/ / ____/___/ //____/_/ /_/ /             |
+|         \____/_/    \____/_/    /____/      /___/___/             |
+|                                                                   |
+| GPOPS-II Version 2.5.  Release Date: Aug 2018                     |
+|___________________________________________________________________|
+|                                                                   |
+| GPOPS-II Copyright (c) 2013-2019 Michael Patterson & Anil V. Rao. |
+|___________________________________________________________________|
+|                                                                   |
+| Downloading, using, copying, or modifying the GPOPS-II code       |
+| code constitutes an agreement to ALL of the terms of the          |
+| GPOPS-II license.                                                 |
+|___________________________________________________________________|
+ 
+ 
+GPOPS-II Defaults Used:
+    Using default setting setup.derivatives.numsamples = 10
+ 
+ 
+Finding Optimal Control Problem Dependencies
+{Operation terminated by user during <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('pointKinematics', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\core\mex\pointKinematics.m', 46)" style="font-weight:bold">pointKinematics</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\core\mex\pointKinematics.m',46,0)">line 46</a>)
+
+
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('calcTorqueBasedModeledValues>calculateModeledValuesPointKinematics', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\TreatmentOptimization\TrackingOptimization\calcTorqueBasedModeledValues.m', 174)" style="font-weight:bold">calcTorqueBasedModeledValues>calculateModeledValuesPointKinematics</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\TreatmentOptimization\TrackingOptimization\calcTorqueBasedModeledValues.m',174,0)">line 174</a>)
+[fullPositions, fullVelocities] = pointKinematics(values.time, ...
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('calcTorqueBasedModeledValues', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\TreatmentOptimization\TrackingOptimization\calcTorqueBasedModeledValues.m', 37)" style="font-weight:bold">calcTorqueBasedModeledValues</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\TreatmentOptimization\TrackingOptimization\calcTorqueBasedModeledValues.m',37,0)">line 37</a>)
+    calculateModeledValuesPointKinematics(values, inputs);
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('computeGpopsContinuousFunction', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\TreatmentOptimization\gpops\computeGpopsContinuousFunction.m', 37)" style="font-weight:bold">computeGpopsContinuousFunction</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\TreatmentOptimization\gpops\computeGpopsContinuousFunction.m',37,0)">line 37</a>)
+modeledValues = calcTorqueBasedModeledValues(values, setup.auxdata, ...
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In gpopsContFirstCD
+
+In gpopsRandomGrd
+
+In gpopsDependSparse
+
+In gpopsDependencies
+
+In gpops2
+
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('solveOptimalControlProblem', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\TreatmentOptimization\solveOptimalControlProblem.m', 30)" style="font-weight:bold">solveOptimalControlProblem</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\TreatmentOptimization\solveOptimalControlProblem.m',30,0)">line 30</a>)
+solution = gpops2(setup);
+           ^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('DesignOptimizationTool', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\TreatmentOptimization\DesignOptimization\DesignOptimizationTool.m', 48)" style="font-weight:bold">DesignOptimizationTool</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\TreatmentOptimization\DesignOptimization\DesignOptimizationTool.m',48,0)">line 48</a>)
+[inputs, outputs] = solveOptimalControlProblem(inputs, params);
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('RunDesignOptimization', 'C:\Users\rs200\Documents\GitHub\nmsm-advanced-tutorials\Tutorial 1\Data\DO\RunDesignOptimization.m', 3)" style="font-weight:bold">RunDesignOptimization</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-advanced-tutorials\Tutorial 1\Data\DO\RunDesignOptimization.m',3,0)">line 3</a>)
+DesignOptimizationTool("Completed\DO_Settings_HTOOpt.xml")
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 
+RunDesignOptimization
+[Warning: Settings file may not be compatible with this version of the NMSM Pipeline. Software version: 1.5.2 Settings file
+version: 1.4.0 For the latest version of the NMSM Pipeline, please visit https://nmsm.rice.edu.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('verifyVersion', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\core\verify\verifyVersion.m', 58)" style="font-weight:bold">verifyVersion</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\core\verify\verifyVersion.m',58,0)">line 58</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('DesignOptimizationTool', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\TreatmentOptimization\DesignOptimization\DesignOptimizationTool.m', 40)" style="font-weight:bold">DesignOptimizationTool</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\TreatmentOptimization\DesignOptimization\DesignOptimizationTool.m',40,0)">line 40</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('RunDesignOptimization', 'C:\Users\rs200\Documents\GitHub\nmsm-advanced-tutorials\Tutorial 1\Data\DO\RunDesignOptimization.m', 3)" style="font-weight:bold">RunDesignOptimization</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-advanced-tutorials\Tutorial 1\Data\DO\RunDesignOptimization.m',3,0)">line 3</a>)] 
+[Warning: Settings file may not be compatible with this version of the NMSM Pipeline. Software version: 1.5.2 Settings file
+version: 1.4.1 For the latest version of the NMSM Pipeline, please visit https://nmsm.rice.edu.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('verifyVersion', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\core\verify\verifyVersion.m', 58)" style="font-weight:bold">verifyVersion</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\core\verify\verifyVersion.m',58,0)">line 58</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('parseOptimalControlSolverSettings', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\core\optimal_control\parseOptimalControlSolverSettings.m', 32)" style="font-weight:bold">parseOptimalControlSolverSettings</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\core\optimal_control\parseOptimalControlSolverSettings.m',32,0)">line 32</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('parseTreatmentOptimizationInputs', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\core\parse\parseTreatmentOptimizationInputs.m', 37)" style="font-weight:bold">parseTreatmentOptimizationInputs</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\core\parse\parseTreatmentOptimizationInputs.m',37,0)">line 37</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('parseDesignOptimizationSettingsTree', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\TreatmentOptimization\DesignOptimization\parseDesignOptimizationSettingsTree.m', 33)" style="font-weight:bold">parseDesignOptimizationSettingsTree</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\TreatmentOptimization\DesignOptimization\parseDesignOptimizationSettingsTree.m',33,0)">line 33</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('DesignOptimizationTool', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\TreatmentOptimization\DesignOptimization\DesignOptimizationTool.m', 41)" style="font-weight:bold">DesignOptimizationTool</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\TreatmentOptimization\DesignOptimization\DesignOptimizationTool.m',41,0)">line 41</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('RunDesignOptimization', 'C:\Users\rs200\Documents\GitHub\nmsm-advanced-tutorials\Tutorial 1\Data\DO\RunDesignOptimization.m', 3)" style="font-weight:bold">RunDesignOptimization</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-advanced-tutorials\Tutorial 1\Data\DO\RunDesignOptimization.m',3,0)">line 3</a>)] 
+Cleared memory from opensimPointKin mex file.
+Cleared memory from inverseDynamics mex file.
+{Operation terminated by user during <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('initializeMexOrMatlabParallelFunctions', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\core\mex\initializeMexOrMatlabParallelFunctions.m', 43)" style="font-weight:bold">initializeMexOrMatlabParallelFunctions</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\core\mex\initializeMexOrMatlabParallelFunctions.m',43,0)">line 43</a>)
+
+
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('makeTreatmentOptimizationInputs', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\TreatmentOptimization\makeTreatmentOptimizationInputs.m', 40)" style="font-weight:bold">makeTreatmentOptimizationInputs</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\TreatmentOptimization\makeTreatmentOptimizationInputs.m',40,0)">line 40</a>)
+    initializeMexOrMatlabParallelFunctions(inputs.mexModel);
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('DesignOptimizationTool', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\TreatmentOptimization\DesignOptimization\DesignOptimizationTool.m', 47)" style="font-weight:bold">DesignOptimizationTool</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\TreatmentOptimization\DesignOptimization\DesignOptimizationTool.m',47,0)">line 47</a>)
+inputs = makeTreatmentOptimizationInputs(inputs, params);
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('RunDesignOptimization', 'C:\Users\rs200\Documents\GitHub\nmsm-advanced-tutorials\Tutorial 1\Data\DO\RunDesignOptimization.m', 3)" style="font-weight:bold">RunDesignOptimization</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-advanced-tutorials\Tutorial 1\Data\DO\RunDesignOptimization.m',3,0)">line 3</a>)
+DesignOptimizationTool("Completed\DO_Settings_HTOOpt.xml")
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 
+RunDesignOptimization
+[Warning: Settings file may not be compatible with this version of the NMSM Pipeline. Software version: 1.5.2 Settings file
+version: 1.4.0 For the latest version of the NMSM Pipeline, please visit https://nmsm.rice.edu.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('verifyVersion', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\core\verify\verifyVersion.m', 58)" style="font-weight:bold">verifyVersion</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\core\verify\verifyVersion.m',58,0)">line 58</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('DesignOptimizationTool', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\TreatmentOptimization\DesignOptimization\DesignOptimizationTool.m', 40)" style="font-weight:bold">DesignOptimizationTool</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\TreatmentOptimization\DesignOptimization\DesignOptimizationTool.m',40,0)">line 40</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('RunDesignOptimization', 'C:\Users\rs200\Documents\GitHub\nmsm-advanced-tutorials\Tutorial 1\Data\DO\RunDesignOptimization.m', 7)" style="font-weight:bold">RunDesignOptimization</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-advanced-tutorials\Tutorial 1\Data\DO\RunDesignOptimization.m',7,0)">line 7</a>)] 
+[Warning: Settings file may not be compatible with this version of the NMSM Pipeline. Software version: 1.5.2 Settings file
+version: 1.4.1 For the latest version of the NMSM Pipeline, please visit https://nmsm.rice.edu.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('verifyVersion', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\core\verify\verifyVersion.m', 58)" style="font-weight:bold">verifyVersion</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\core\verify\verifyVersion.m',58,0)">line 58</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('parseOptimalControlSolverSettings', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\core\optimal_control\parseOptimalControlSolverSettings.m', 32)" style="font-weight:bold">parseOptimalControlSolverSettings</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\core\optimal_control\parseOptimalControlSolverSettings.m',32,0)">line 32</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('parseTreatmentOptimizationInputs', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\core\parse\parseTreatmentOptimizationInputs.m', 37)" style="font-weight:bold">parseTreatmentOptimizationInputs</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\core\parse\parseTreatmentOptimizationInputs.m',37,0)">line 37</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('parseDesignOptimizationSettingsTree', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\TreatmentOptimization\DesignOptimization\parseDesignOptimizationSettingsTree.m', 33)" style="font-weight:bold">parseDesignOptimizationSettingsTree</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\TreatmentOptimization\DesignOptimization\parseDesignOptimizationSettingsTree.m',33,0)">line 33</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('DesignOptimizationTool', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\TreatmentOptimization\DesignOptimization\DesignOptimizationTool.m', 41)" style="font-weight:bold">DesignOptimizationTool</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\TreatmentOptimization\DesignOptimization\DesignOptimizationTool.m',41,0)">line 41</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('RunDesignOptimization', 'C:\Users\rs200\Documents\GitHub\nmsm-advanced-tutorials\Tutorial 1\Data\DO\RunDesignOptimization.m', 7)" style="font-weight:bold">RunDesignOptimization</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-advanced-tutorials\Tutorial 1\Data\DO\RunDesignOptimization.m',7,0)">line 7</a>)] 
+Cleared memory from opensimPointKin mex file.
+Cleared memory from inverseDynamics mex file.
+{Operation terminated by user during <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('initializeMexOrMatlabParallelFunctions', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\core\mex\initializeMexOrMatlabParallelFunctions.m', 43)" style="font-weight:bold">initializeMexOrMatlabParallelFunctions</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\core\mex\initializeMexOrMatlabParallelFunctions.m',43,0)">line 43</a>)
+
+
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('makeTreatmentOptimizationInputs', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\TreatmentOptimization\makeTreatmentOptimizationInputs.m', 40)" style="font-weight:bold">makeTreatmentOptimizationInputs</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\TreatmentOptimization\makeTreatmentOptimizationInputs.m',40,0)">line 40</a>)
+    initializeMexOrMatlabParallelFunctions(inputs.mexModel);
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('DesignOptimizationTool', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\TreatmentOptimization\DesignOptimization\DesignOptimizationTool.m', 47)" style="font-weight:bold">DesignOptimizationTool</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\TreatmentOptimization\DesignOptimization\DesignOptimizationTool.m',47,0)">line 47</a>)
+inputs = makeTreatmentOptimizationInputs(inputs, params);
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('RunDesignOptimization', 'C:\Users\rs200\Documents\GitHub\nmsm-advanced-tutorials\Tutorial 1\Data\DO\RunDesignOptimization.m', 7)" style="font-weight:bold">RunDesignOptimization</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-advanced-tutorials\Tutorial 1\Data\DO\RunDesignOptimization.m',7,0)">line 7</a>)
+DesignOptimizationTool("Completed\DO_Settings_MTG.xml")
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 
+[Warning: Escaped character '\G' is not valid. See 'doc sprintf' for supported special characters.] 
+{Error using <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('xml2struct', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\core\parse\xml\xml2struct.m', 49)" style="font-weight:bold">xml2struct</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\core\parse\xml\xml2struct.m',49,0)">line 49</a>)
+The file Completed
+
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('GroundContactPersonalizationTool', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\GroundContactPersonalization\GroundContactPersonalizationTool.m', 39)" style="font-weight:bold">GroundContactPersonalizationTool</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\GroundContactPersonalization\GroundContactPersonalizationTool.m',39,0)">line 39</a>)
+settingsTree = xml2struct(settingsFileName);
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('RunGCP', 'C:\Users\rs200\Documents\GitHub\nmsm-advanced-tutorials\Tutorial 1\Data\GCP\RunGCP.m', 3)" style="font-weight:bold">RunGCP</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-advanced-tutorials\Tutorial 1\Data\GCP\RunGCP.m',3,0)">line 3</a>)
+GroundContactPersonalizationTool("Completed\GCP_Settings_Coulomb.xml")
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+}
+RunJMP
+[Warning: Settings file may not be compatible with this version of the NMSM Pipeline. Software version: 1.5.2 Settings file version:
+1.4.0 For the latest version of the NMSM Pipeline, please visit https://nmsm.rice.edu.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('verifyVersion', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\core\verify\verifyVersion.m', 58)" style="font-weight:bold">verifyVersion</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\core\verify\verifyVersion.m',58,0)">line 58</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('JointModelPersonalizationTool', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\JointModelPersonalization\JointModelPersonalizationTool.m', 40)" style="font-weight:bold">JointModelPersonalizationTool</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\JointModelPersonalization\JointModelPersonalizationTool.m',40,0)">line 40</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('RunJMP', 'C:\Users\rs200\Documents\GitHub\nmsm-advanced-tutorials\Tutorial 1\Data\JMP\RunJMP.m', 3)" style="font-weight:bold">RunJMP</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-advanced-tutorials\Tutorial 1\Data\JMP\RunJMP.m',3,0)">line 3</a>)] 
+{Error using <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('parseJointModelPersonalizationSettingsTree>getOutputFile', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\JointModelPersonalization\parseJointModelPersonalizationSettingsTree.m', 63)" style="font-weight:bold">parseJointModelPersonalizationSettingsTree>getOutputFile</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\JointModelPersonalization\parseJointModelPersonalizationSettingsTree.m',63,0)">line 63</a>)
+Cannot find specified output directory. Either use <results_directory> in your settings file or verify that your <output_model_file> is
+contained in an existing directory.
+
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('parseJointModelPersonalizationSettingsTree', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\JointModelPersonalization\parseJointModelPersonalizationSettingsTree.m', 34)" style="font-weight:bold">parseJointModelPersonalizationSettingsTree</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\JointModelPersonalization\parseJointModelPersonalizationSettingsTree.m',34,0)">line 34</a>)
+outputFile = getOutputFile(settingsTree);
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('JointModelPersonalizationTool', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\JointModelPersonalization\JointModelPersonalizationTool.m', 42)" style="font-weight:bold">JointModelPersonalizationTool</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\JointModelPersonalization\JointModelPersonalizationTool.m',42,0)">line 42</a>)
+    parseJointModelPersonalizationSettingsTree(settingsTree);
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('RunJMP', 'C:\Users\rs200\Documents\GitHub\nmsm-advanced-tutorials\Tutorial 1\Data\JMP\RunJMP.m', 3)" style="font-weight:bold">RunJMP</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-advanced-tutorials\Tutorial 1\Data\JMP\RunJMP.m',3,0)">line 3</a>)
+JointModelPersonalizationTool("Completed\JMP_Settings_Sequential.xml")
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 
+RunJMP
+[Warning: Settings file may not be compatible with this version of the NMSM Pipeline. Software version: 1.5.2 Settings file version:
+1.4.0 For the latest version of the NMSM Pipeline, please visit https://nmsm.rice.edu.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('verifyVersion', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\core\verify\verifyVersion.m', 58)" style="font-weight:bold">verifyVersion</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\core\verify\verifyVersion.m',58,0)">line 58</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('JointModelPersonalizationTool', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\JointModelPersonalization\JointModelPersonalizationTool.m', 40)" style="font-weight:bold">JointModelPersonalizationTool</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\JointModelPersonalization\JointModelPersonalizationTool.m',40,0)">line 40</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('RunJMP', 'C:\Users\rs200\Documents\GitHub\nmsm-advanced-tutorials\Tutorial 1\Data\JMP\RunJMP.m', 3)" style="font-weight:bold">RunJMP</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-advanced-tutorials\Tutorial 1\Data\JMP\RunJMP.m',3,0)">line 3</a>)] 
+{Error using <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('Model', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\core\model\Model.m', 32)" style="font-weight:bold">Model</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\core\model\Model.m',32,0)">line 32</a>)
+Java exception occurred:
+java.io.IOException: Object: Cannot open file Full_Body_Walking_Model-Scaled_Adjusted.osim. It may not exist or you do not have
+permission to read it.
+	Thrown at Object.cpp:106 in Object().
+	at org.opensim.modeling.opensimSimulationJNI.new_Model__SWIG_1(Native Method)
+	at org.opensim.modeling.Model.<init>(Model.java:857)
+
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('Model', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\core\model\Model.m', 32)" style="font-weight:bold">Model</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\core\model\Model.m',32,0)">line 32</a>)
+[~, outputModel] = evalc('org.opensim.modeling.Model(model)');
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('parseModel', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\core\parse\parseModel.m', 3)" style="font-weight:bold">parseModel</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\core\parse\parseModel.m',3,0)">line 3</a>)
+inputs.model = Model(fileName);
+               ^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('parseJointModelPersonalizationSettingsTree>getInputs', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\JointModelPersonalization\parseJointModelPersonalizationSettingsTree.m', 70)" style="font-weight:bold">parseJointModelPersonalizationSettingsTree>getInputs</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\JointModelPersonalization\parseJointModelPersonalizationSettingsTree.m',70,0)">line 70</a>)
+inputs = parseModel(tree, struct());
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('parseJointModelPersonalizationSettingsTree', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\JointModelPersonalization\parseJointModelPersonalizationSettingsTree.m', 35)" style="font-weight:bold">parseJointModelPersonalizationSettingsTree</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\JointModelPersonalization\parseJointModelPersonalizationSettingsTree.m',35,0)">line 35</a>)
+inputs = getInputs(settingsTree);
+         ^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('JointModelPersonalizationTool', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\JointModelPersonalization\JointModelPersonalizationTool.m', 42)" style="font-weight:bold">JointModelPersonalizationTool</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\JointModelPersonalization\JointModelPersonalizationTool.m',42,0)">line 42</a>)
+    parseJointModelPersonalizationSettingsTree(settingsTree);
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('RunJMP', 'C:\Users\rs200\Documents\GitHub\nmsm-advanced-tutorials\Tutorial 1\Data\JMP\RunJMP.m', 3)" style="font-weight:bold">RunJMP</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-advanced-tutorials\Tutorial 1\Data\JMP\RunJMP.m',3,0)">line 3</a>)
+JointModelPersonalizationTool("Completed\JMP_Settings_Sequential.xml")
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 
+RunJMP
+[Warning: Settings file may not be compatible with this version of the NMSM Pipeline. Software version: 1.5.2 Settings file version:
+1.4.0 For the latest version of the NMSM Pipeline, please visit https://nmsm.rice.edu.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('verifyVersion', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\core\verify\verifyVersion.m', 58)" style="font-weight:bold">verifyVersion</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\core\verify\verifyVersion.m',58,0)">line 58</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('JointModelPersonalizationTool', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\JointModelPersonalization\JointModelPersonalizationTool.m', 40)" style="font-weight:bold">JointModelPersonalizationTool</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\JointModelPersonalization\JointModelPersonalizationTool.m',40,0)">line 40</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('RunJMP', 'C:\Users\rs200\Documents\GitHub\nmsm-advanced-tutorials\Tutorial 1\Data\JMP\RunJMP.m', 3)" style="font-weight:bold">RunJMP</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-advanced-tutorials\Tutorial 1\Data\JMP\RunJMP.m',3,0)">line 3</a>)] 

@@ -1,0 +1,56 @@
+
+List of user-set options:
+
+                                    Name   Value                used
+                   hessian_approximation = limited-memory        yes
+                           linear_solver = ma57                  yes
+                  ma57_automatic_scaling = yes                   yes
+                                max_iter = 500                   yes
+                             mu_strategy = adaptive              yes
+                             output_file = TreatmentOptimizationIPOPTinfo.txt  yes
+                             print_level = 5                     yes
+                      print_user_options = yes                   yes
+                                     tol = 1                     yes
+This is Ipopt version 3.12.9, running with linear solver ma57.
+
+Number of nonzeros in equality constraint Jacobian...:    39725
+Number of nonzeros in inequality constraint Jacobian.:   100186
+Number of nonzeros in Lagrangian Hessian.............:        0
+
+Total number of variables............................:    10587
+                     variables with only lower bounds:        0
+                variables with lower and upper bounds:    10587
+                     variables with only upper bounds:        0
+Total number of equality constraints.................:     6225
+Total number of inequality constraints...............:     1875
+        inequality constraints with only lower bounds:        0
+   inequality constraints with lower and upper bounds:     1875
+        inequality constraints with only upper bounds:        0
+
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+   0  9.9999900e-03 1.00e-02 4.44e-16   0.0 0.00e+00    -  0.00e+00 0.00e+00   0
+   1  9.9990000e-05 1.00e-04 2.16e-02  -6.4 1.00e-02    -  9.78e-01 9.90e-01h  1
+   2  8.3033946e-05 8.12e-05 5.60e-01  -4.1 1.09e-02    -  9.52e-01 1.88e-01h  1
+   3  5.6074014e-05 4.10e-05 5.03e-01  -4.8 1.18e-02    -  9.67e-01 4.95e-01h  2
+
+Number of Iterations....: 3
+
+                                   (scaled)                 (unscaled)
+Objective...............:   5.6074014034222486e-05    5.6074014034222486e-05
+Dual infeasibility......:   5.0256033854811111e-01    5.0256033854811111e-01
+Constraint violation....:   4.1017796189100405e-05    4.1017796189100405e-05
+Complementarity.........:   9.4645454380787620e-05    9.4645454380787620e-05
+Overall NLP error.......:   5.0256033854811111e-01    5.0256033854811111e-01
+
+
+Number of objective function evaluations             = 6
+Number of objective gradient evaluations             = 4
+Number of equality constraint evaluations            = 6
+Number of inequality constraint evaluations          = 6
+Number of equality constraint Jacobian evaluations   = 4
+Number of inequality constraint Jacobian evaluations = 4
+Number of Lagrangian Hessian evaluations             = 0
+Total CPU secs in IPOPT (w/o function evaluations)   =     10.023
+Total CPU secs in NLP function evaluations           =     39.579
+
+EXIT: Optimal Solution Found.

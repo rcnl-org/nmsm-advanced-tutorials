@@ -1,0 +1,20 @@
+Spline nodes for foot 1: 19
+{Operation terminated by user during <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('makeFootKinematics', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\GroundContactPersonalization\Modeling\KinematicModel\makeFootKinematics.m', 90)" style="font-weight:bold">makeFootKinematics</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\GroundContactPersonalization\Modeling\KinematicModel\makeFootKinematics.m',90,0)">line 90</a>)
+
+
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('prepareGroundContactPersonalizationInputs>prepareInputsForFoot', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\GroundContactPersonalization\prepareGroundContactPersonalizationInputs.m', 82)" style="font-weight:bold">prepareGroundContactPersonalizationInputs>prepareInputsForFoot</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\GroundContactPersonalization\prepareGroundContactPersonalizationInputs.m',82,0)">line 82</a>)
+    makeFootKinematics(inputs.bodyModel, ...
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('prepareGroundContactPersonalizationInputs', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\GroundContactPersonalization\prepareGroundContactPersonalizationInputs.m', 39)" style="font-weight:bold">prepareGroundContactPersonalizationInputs</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\GroundContactPersonalization\prepareGroundContactPersonalizationInputs.m',39,0)">line 39</a>)
+    inputs.surfaces{surface} = prepareInputsForFoot( ...
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('GroundContactPersonalization', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\GroundContactPersonalization\GroundContactPersonalization.m', 31)" style="font-weight:bold">GroundContactPersonalization</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\GroundContactPersonalization\GroundContactPersonalization.m',31,0)">line 31</a>)
+inputs = prepareGroundContactPersonalizationInputs(inputs);
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('GroundContactPersonalizationTool', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\GroundContactPersonalization\GroundContactPersonalizationTool.m', 45)" style="font-weight:bold">GroundContactPersonalizationTool</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\GroundContactPersonalization\GroundContactPersonalizationTool.m',45,0)">line 45</a>)
+results = GroundContactPersonalization(inputs, params);
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('RunGCP', 'C:\Users\rs200\Documents\GitHub\nmsm-advanced-tutorials\Tutorial 1\Data\GCP\RunGCP.m', 3)" style="font-weight:bold">RunGCP</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-advanced-tutorials\Tutorial 1\Data\GCP\RunGCP.m',3,0)">line 3</a>)
+GroundContactPersonalizationTool("Completed\GCP_Settings_Coulomb.xml")
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 

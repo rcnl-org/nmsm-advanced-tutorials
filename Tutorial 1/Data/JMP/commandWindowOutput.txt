@@ -1,0 +1,95 @@
+{Operation terminated by user during <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('getNumericOrStringFieldValue', 'C:\Program Files\MATLAB\R2025a\toolbox\shared\optimlib\getNumericOrStringFieldValue.m', 20)" style="font-weight:bold">getNumericOrStringFieldValue</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2025a\toolbox\shared\optimlib\getNumericOrStringFieldValue.m',20,0)">line 20</a>)
+
+
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('lsqnsetup>processOptions', 'C:\Program Files\MATLAB\R2025a\toolbox\shared\optimlib\lsqnsetup.m', 154)" style="font-weight:bold">lsqnsetup>processOptions</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2025a\toolbox\shared\optimlib\lsqnsetup.m',154,0)">line 154</a>)
+    [typicalx,ME] = getNumericOrStringFieldValue('TypicalX','ones(numberOfVariables,1)', ...
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('lsqnsetup', 'C:\Program Files\MATLAB\R2025a\toolbox\shared\optimlib\lsqnsetup.m', 20)" style="font-weight:bold">lsqnsetup</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2025a\toolbox\shared\optimlib\lsqnsetup.m',20,0)">line 20</a>)
+[options,flags] = processOptions(optionNames,options,defaultopt,optimgetFlag,sizes.nVar);
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('lsqnonlin', 'C:\Program Files\MATLAB\R2025a\toolbox\shared\optimlib\lsqnonlin.m', 208)" style="font-weight:bold">lsqnonlin</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2025a\toolbox\shared\optimlib\lsqnonlin.m',208,0)">line 208</a>)
+ JACOB,OUTPUT,earlyTermination] = lsqnsetup(FUN,xCurrent,LB,UB,options, ...
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('computeKinematicCalibration', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\JointModelPersonalization\KinematicCalibration\computeKinematicCalibration.m', 40)" style="font-weight:bold">computeKinematicCalibration</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\JointModelPersonalization\KinematicCalibration\computeKinematicCalibration.m',40,0)">line 40</a>)
+optimizedValues = lsqnonlin ...
+                  ^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('JointModelPersonalization', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\JointModelPersonalization\JointModelPersonalization.m', 44)" style="font-weight:bold">JointModelPersonalization</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\JointModelPersonalization\JointModelPersonalization.m',44,0)">line 44</a>)
+    optimizedValues = computeKinematicCalibration(outputModelFileName, ...
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('JointModelPersonalizationTool', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\JointModelPersonalization\JointModelPersonalizationTool.m', 45)" style="font-weight:bold">JointModelPersonalizationTool</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\JointModelPersonalization\JointModelPersonalizationTool.m',45,0)">line 45</a>)
+newModel = JointModelPersonalization(inputs, params);
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('RunJMP', 'C:\Users\rs200\Documents\GitHub\nmsm-advanced-tutorials\Tutorial 1\Data\JMP\RunJMP.m', 3)" style="font-weight:bold">RunJMP</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-advanced-tutorials\Tutorial 1\Data\JMP\RunJMP.m',3,0)">line 3</a>)
+JointModelPersonalizationTool("Completed\JMP_Settings_Sequential.xml")
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 
+RunJMP
+[Warning: Settings file may not be compatible with this version of the NMSM Pipeline. Software version: 1.5.2 Settings file version:
+1.4.0 For the latest version of the NMSM Pipeline, please visit https://nmsm.rice.edu.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('verifyVersion', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\core\verify\verifyVersion.m', 58)" style="font-weight:bold">verifyVersion</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\core\verify\verifyVersion.m',58,0)">line 58</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('JointModelPersonalizationTool', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\JointModelPersonalization\JointModelPersonalizationTool.m', 40)" style="font-weight:bold">JointModelPersonalizationTool</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\JointModelPersonalization\JointModelPersonalizationTool.m',40,0)">line 40</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('RunJMP', 'C:\Users\rs200\Documents\GitHub\nmsm-advanced-tutorials\Tutorial 1\Data\JMP\RunJMP.m', 3)" style="font-weight:bold">RunJMP</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-advanced-tutorials\Tutorial 1\Data\JMP\RunJMP.m',3,0)">line 3</a>)] 
+{Operation terminated by user during <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('computeInverseKinematicsSquaredError', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\JointModelPersonalization\KinematicCalibration\computeInverseKinematicsSquaredError.m', 43)" style="font-weight:bold">computeInverseKinematicsSquaredError</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\JointModelPersonalization\KinematicCalibration\computeInverseKinematicsSquaredError.m',43,0)">line 43</a>)
+
+
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('computeInnerOptimizationHeuristic', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\JointModelPersonalization\KinematicCalibration\computeInnerOptimizationHeuristic.m', 37)" style="font-weight:bold">computeInnerOptimizationHeuristic</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\JointModelPersonalization\KinematicCalibration\computeInnerOptimizationHeuristic.m',37,0)">line 37</a>)
+error = computeInverseKinematicsSquaredError(model, trialIKSolver, ...
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('computeInnerOptimization', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\JointModelPersonalization\KinematicCalibration\computeInnerOptimization.m', 43)" style="font-weight:bold">computeInnerOptimization</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\JointModelPersonalization\KinematicCalibration\computeInnerOptimization.m',43,0)">line 43</a>)
+error = computeInnerOptimizationHeuristic(modelCopy, markersReference, ...
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('computeKinematicCalibration>@(values)computeInnerOptimization(values,functions,model,markerFileName,params)', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\JointModelPersonalization\KinematicCalibration\computeKinematicCalibration.m', 41)" style="font-weight:bold">computeKinematicCalibration>@(values)computeInnerOptimization(values,functions,model,markerFileName,params)</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\JointModelPersonalization\KinematicCalibration\computeKinematicCalibration.m',41,0)">line 41</a>)
+    (@(values) computeInnerOptimization(values, functions, model, ...
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('lsqnonlin', 'C:\Program Files\MATLAB\R2025a\toolbox\shared\optimlib\lsqnonlin.m', 221)" style="font-weight:bold">lsqnonlin</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2025a\toolbox\shared\optimlib\lsqnonlin.m',221,0)">line 221</a>)
+            initVals.F = feval(funfcn{3},xCurrent,varargin{:});
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('computeKinematicCalibration', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\JointModelPersonalization\KinematicCalibration\computeKinematicCalibration.m', 40)" style="font-weight:bold">computeKinematicCalibration</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\JointModelPersonalization\KinematicCalibration\computeKinematicCalibration.m',40,0)">line 40</a>)
+optimizedValues = lsqnonlin ...
+                  ^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('JointModelPersonalization', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\JointModelPersonalization\JointModelPersonalization.m', 44)" style="font-weight:bold">JointModelPersonalization</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\JointModelPersonalization\JointModelPersonalization.m',44,0)">line 44</a>)
+    optimizedValues = computeKinematicCalibration(outputModelFileName, ...
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('JointModelPersonalizationTool', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\JointModelPersonalization\JointModelPersonalizationTool.m', 45)" style="font-weight:bold">JointModelPersonalizationTool</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\JointModelPersonalization\JointModelPersonalizationTool.m',45,0)">line 45</a>)
+newModel = JointModelPersonalization(inputs, params);
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('RunJMP', 'C:\Users\rs200\Documents\GitHub\nmsm-advanced-tutorials\Tutorial 1\Data\JMP\RunJMP.m', 3)" style="font-weight:bold">RunJMP</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-advanced-tutorials\Tutorial 1\Data\JMP\RunJMP.m',3,0)">line 3</a>)
+JointModelPersonalizationTool("Completed\JMP_Settings_Simultaneous.xml")
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 
+RunGCP
+[Warning: Settings file may not be compatible with this version of the NMSM Pipeline. Software version: 1.5.2 Settings file version:
+1.4.0 For the latest version of the NMSM Pipeline, please visit https://nmsm.rice.edu.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('verifyVersion', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\core\verify\verifyVersion.m', 58)" style="font-weight:bold">verifyVersion</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\core\verify\verifyVersion.m',58,0)">line 58</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('GroundContactPersonalizationTool', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\GroundContactPersonalization\GroundContactPersonalizationTool.m', 40)" style="font-weight:bold">GroundContactPersonalizationTool</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\GroundContactPersonalization\GroundContactPersonalizationTool.m',40,0)">line 40</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('RunGCP', 'C:\Users\rs200\Documents\GitHub\nmsm-advanced-tutorials\Tutorial 1\Data\GCP\RunGCP.m', 3)" style="font-weight:bold">RunGCP</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-advanced-tutorials\Tutorial 1\Data\GCP\RunGCP.m',3,0)">line 3</a>)] 
+{Error using <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('parseGroundContactPersonalizationSettingsTree>getGroundReactions', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\GroundContactPersonalization\parseGroundContactPersonalizationSettingsTree.m', 131)" style="font-weight:bold">parseGroundContactPersonalizationSettingsTree>getGroundReactions</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\GroundContactPersonalization\parseGroundContactPersonalizationSettingsTree.m',131,0)">line 131</a>)
+Java exception occurred:
+java.io.IOException: Storage: Failed to open file '.\Trial12_Gait_forces_filtered.mot'. Verify that the file exists at the specified
+location.
+	Thrown at Storage.cpp:186 in Storage().
+	at org.opensim.modeling.opensimCommonJNI.new_Storage__SWIG_4(Native Method)
+	at org.opensim.modeling.Storage.<init>(Storage.java:156)
+
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('parseGroundContactPersonalizationSettingsTree>getContactSurfaces', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\GroundContactPersonalization\parseGroundContactPersonalizationSettingsTree.m', 101)" style="font-weight:bold">parseGroundContactPersonalizationSettingsTree>getContactSurfaces</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\GroundContactPersonalization\parseGroundContactPersonalizationSettingsTree.m',101,0)">line 101</a>)
+        output{counter} = getGroundReactions(inputs.bodyModel, ...
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('parseGroundContactPersonalizationSettingsTree>getInputs', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\GroundContactPersonalization\parseGroundContactPersonalizationSettingsTree.m', 83)" style="font-weight:bold">parseGroundContactPersonalizationSettingsTree>getInputs</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\GroundContactPersonalization\parseGroundContactPersonalizationSettingsTree.m',83,0)">line 83</a>)
+inputs.surfaces = getContactSurfaces(inputs, tree);
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('parseGroundContactPersonalizationSettingsTree', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\GroundContactPersonalization\parseGroundContactPersonalizationSettingsTree.m', 33)" style="font-weight:bold">parseGroundContactPersonalizationSettingsTree</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\GroundContactPersonalization\parseGroundContactPersonalizationSettingsTree.m',33,0)">line 33</a>)
+inputs = getInputs(settingsTree);
+         ^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('GroundContactPersonalizationTool', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\GroundContactPersonalization\GroundContactPersonalizationTool.m', 42)" style="font-weight:bold">GroundContactPersonalizationTool</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\GroundContactPersonalization\GroundContactPersonalizationTool.m',42,0)">line 42</a>)
+    parseGroundContactPersonalizationSettingsTree(settingsTree);
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('RunGCP', 'C:\Users\rs200\Documents\GitHub\nmsm-advanced-tutorials\Tutorial 1\Data\GCP\RunGCP.m', 3)" style="font-weight:bold">RunGCP</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-advanced-tutorials\Tutorial 1\Data\GCP\RunGCP.m',3,0)">line 3</a>)
+GroundContactPersonalizationTool("Completed\GCP_Settings_Coulomb.xml")
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 
+RunGCP
+[Warning: Settings file may not be compatible with this version of the NMSM Pipeline. Software version: 1.5.2 Settings file version:
+1.4.0 For the latest version of the NMSM Pipeline, please visit https://nmsm.rice.edu.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('verifyVersion', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\core\verify\verifyVersion.m', 58)" style="font-weight:bold">verifyVersion</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\core\verify\verifyVersion.m',58,0)">line 58</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('GroundContactPersonalizationTool', 'C:\Users\rs200\Documents\GitHub\nmsm-core\src\GroundContactPersonalization\GroundContactPersonalizationTool.m', 40)" style="font-weight:bold">GroundContactPersonalizationTool</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-core\src\GroundContactPersonalization\GroundContactPersonalizationTool.m',40,0)">line 40</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('RunGCP', 'C:\Users\rs200\Documents\GitHub\nmsm-advanced-tutorials\Tutorial 1\Data\GCP\RunGCP.m', 3)" style="font-weight:bold">RunGCP</a> (<a href="matlab: opentoline('C:\Users\rs200\Documents\GitHub\nmsm-advanced-tutorials\Tutorial 1\Data\GCP\RunGCP.m',3,0)">line 3</a>)] 

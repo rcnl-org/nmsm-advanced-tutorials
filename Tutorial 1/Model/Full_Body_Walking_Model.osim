@@ -768,6 +768,44 @@
 					<!--The elements of the inertia tensor (Vec6) as [Ixx Iyy Izz Ixy Ixz Iyz] measured about the mass_center and not the body origin.-->
 					<inertia>2.8700000000000001e-06 1.311e-05 1.311e-05 0 0 0</inertia>
 				</Body>
+				<Body name="proximal_tibia_r">
+					<!--The geometry used to display the axes of this Frame.-->
+					<FrameGeometry name="frame_geometry">
+						<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+						<socket_frame>..</socket_frame>
+						<!--Scale factors in X, Y, Z directions respectively.-->
+						<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+					</FrameGeometry>
+					<!--List of geometry attached to this Frame. Note, the geometry are treated as fixed to the frame and they share the transform of the frame when visualized-->
+					<attached_geometry>
+						<Mesh name="tibia_r_geom">
+							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+							<socket_frame>..</socket_frame>
+							<!--Scale factors in X, Y, Z directions respectively.-->
+							<scale_factors>1 1 1</scale_factors>
+							<!--Default appearance attributes for this Geometry-->
+							<Appearance>
+								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
+								<opacity>0</opacity>
+								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
+								<color>1 1 1</color>
+							</Appearance>
+							<!--Name of geometry file.-->
+							<mesh_file>r_tibia.vtp</mesh_file>
+						</Mesh>
+					</attached_geometry>					
+					<!--Set of wrap objects fixed to this body that GeometryPaths can wrap over.This property used to be a member of Body but was moved up with the introduction of Frames.-->
+					<WrapObjectSet name="wrapobjectset">
+						<objects />
+						<groups />
+					</WrapObjectSet>
+					<!--The mass of the body (kg)-->
+					<mass>1e-08</mass>
+					<!--The location (Vec3) of the mass center in the body frame.-->
+					<mass_center>0 0 0</mass_center>
+					<!--The elements of the inertia tensor (Vec6) as [Ixx Iyy Izz Ixy Ixz Iyz] measured about the mass_center and not the body origin.-->
+					<inertia>1e-08 1e-08 1e-08 0 0 0</inertia>
+				</Body>
 				<Body name="tibia_r">
 					<!--The geometry used to display the axes of this Frame.-->
 					<FrameGeometry name="frame_geometry">
@@ -1510,6 +1548,44 @@
 					<mass_center>0.0018 0.0264 0</mass_center>
 					<!--The elements of the inertia tensor (Vec6) as [Ixx Iyy Izz Ixy Ixz Iyz] measured about the mass_center and not the body origin.-->
 					<inertia>2.8700000000000001e-06 1.311e-05 1.311e-05 0 0 0</inertia>
+				</Body>
+				<Body name="proximal_tibia_l">
+					<!--The geometry used to display the axes of this Frame.-->
+					<FrameGeometry name="frame_geometry">
+						<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+						<socket_frame>..</socket_frame>
+						<!--Scale factors in X, Y, Z directions respectively.-->
+						<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+					</FrameGeometry>
+					<!--List of geometry attached to this Frame. Note, the geometry are treated as fixed to the frame and they share the transform of the frame when visualized-->
+					<attached_geometry>
+						<Mesh name="tibia_l_geom">
+							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+							<socket_frame>..</socket_frame>
+							<!--Scale factors in X, Y, Z directions respectively.-->
+							<scale_factors>1 1 1</scale_factors>
+							<!--Default appearance attributes for this Geometry-->
+							<Appearance>
+								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
+								<opacity>0</opacity>
+								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
+								<color>1 1 1</color>
+							</Appearance>
+							<!--Name of geometry file.-->
+							<mesh_file>l_tibia.vtp</mesh_file>
+						</Mesh>
+					</attached_geometry>
+					<!--Set of wrap objects fixed to this body that GeometryPaths can wrap over.This property used to be a member of Body but was moved up with the introduction of Frames.-->
+					<WrapObjectSet name="wrapobjectset">
+						<objects />
+						<groups />
+					</WrapObjectSet>
+					<!--The mass of the body (kg)-->
+					<mass>1e-08</mass>
+					<!--The location (Vec3) of the mass center in the body frame.-->
+					<mass_center>0 0 0</mass_center>
+					<!--The elements of the inertia tensor (Vec6) as [Ixx Iyy Izz Ixy Ixz Iyz] measured about the mass_center and not the body origin.-->
+					<inertia>1e-08 1e-08 1e-08 0 0 0</inertia>
 				</Body>
 				<Body name="tibia_l">
 					<!--The geometry used to display the axes of this Frame.-->
@@ -3404,7 +3480,7 @@
 					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The parent frame for the joint.).-->
 					<socket_parent_frame>femur_r_offset</socket_parent_frame>
 					<!--Path to a Component that satisfies the Socket 'child_frame' of type PhysicalFrame (description: The child frame for the joint.).-->
-					<socket_child_frame>tibia_r_offset</socket_child_frame>
+					<socket_child_frame>proximal_tibia_r_offset</socket_child_frame>
 					<!--List containing the generalized coordinates (q's) that parameterize this joint.-->
 					<coordinates>
 						<Coordinate name="knee_angle_r">
@@ -3457,7 +3533,7 @@
 							<!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
 							<orientation>-0.070773673 0.0000036732 0.124616326</orientation>
 						</PhysicalOffsetFrame>
-						<PhysicalOffsetFrame name="tibia_r_offset">
+						<PhysicalOffsetFrame name="proximal_tibia_r_offset">
 							<!--The geometry used to display the axes of this Frame.-->
 							<FrameGeometry name="frame_geometry">
 								<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -3466,7 +3542,7 @@
 								<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
 							</FrameGeometry>
 							<!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
-							<socket_parent>/bodyset/tibia_r</socket_parent>
+							<socket_parent>/bodyset/proximal_tibia_r</socket_parent>
 							<!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
 							<translation>-0.0080895399999999992 -0.0035347999999999998 -0.00148474</translation>
 							<!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
@@ -3488,7 +3564,7 @@
 						</TransformAxis>
 						<TransformAxis name="rotation2">
 							<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
-							<coordinates>knee_adduction_r</coordinates>
+							<coordinates>knee_frontal_r</coordinates>
 							<!--Rotation or translation axis for the transform.-->
 							<axis>1 0 0</axis>
 							<!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
@@ -3610,66 +3686,8 @@
 							<axis>1 0 0</axis>
 							<!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
 							<LinearFunction name="function">
-								<coefficients> 1 0</coefficients>
+								<coefficients>1 0</coefficients>
 							</LinearFunction>
-						</TransformAxis>
-						<TransformAxis name="rotation2">
-							<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
-							<coordinates></coordinates>
-							<!--Rotation or translation axis for the transform.-->
-							<axis>0 1 0</axis>
-						</TransformAxis>
-						<TransformAxis name="rotation3">
-							<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
-							<coordinates></coordinates>
-							<!--Rotation or translation axis for the transform.-->
-							<axis>0 0 1</axis>
-						</TransformAxis>
-						<!--3 Axes for translations are listed next.-->
-						<TransformAxis name="translation1">
-							<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
-							<coordinates></coordinates>
-							<!--Rotation or translation axis for the transform.-->
-							<axis>1 0 0</axis>
-							<!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
-							<MultiplierFunction name="function">
-								<function>
-									<Constant name="function">
-										<value>0</value>
-									</Constant>
-								</function>
-								<scale>1.0335650338257452</scale>
-							</MultiplierFunction>
-						</TransformAxis>
-						<TransformAxis name="translation2">
-							<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
-							<coordinates></coordinates>
-							<!--Rotation or translation axis for the transform.-->
-							<axis>0 1 0</axis>
-							<!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
-							<MultiplierFunction name="function">
-								<function>
-									<Constant name="function">
-										<value>0</value>
-									</Constant>
-								</function>
-								<scale>1.0335650338257452</scale>
-							</MultiplierFunction>
-						</TransformAxis>
-						<TransformAxis name="translation3">
-							<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
-							<coordinates></coordinates>
-							<!--Rotation or translation axis for the transform.-->
-							<axis>0 0 1</axis>
-							<!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
-							<MultiplierFunction name="function">
-								<function>
-									<Constant name="function">
-										<value>0</value>
-									</Constant>
-								</function>
-								<scale>1.0335650338257452</scale>
-							</MultiplierFunction>
 						</TransformAxis>
 					</SpatialTransform>
 				</CustomJoint>
@@ -4236,7 +4254,7 @@
 					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The parent frame for the joint.).-->
 					<socket_parent_frame>femur_l_offset</socket_parent_frame>
 					<!--Path to a Component that satisfies the Socket 'child_frame' of type PhysicalFrame (description: The child frame for the joint.).-->
-					<socket_child_frame>tibia_l_offset</socket_child_frame>
+					<socket_child_frame>proximal_tibia_l_offset</socket_child_frame>
 					<!--List containing the generalized coordinates (q's) that parameterize this joint.-->
 					<coordinates>
 						<Coordinate name="knee_angle_l">
@@ -4289,7 +4307,7 @@
 							<!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
 							<orientation>0.070773673 0.0000036732 0.124616326</orientation>
 						</PhysicalOffsetFrame>
-						<PhysicalOffsetFrame name="tibia_l_offset">
+						<PhysicalOffsetFrame name="proximal_tibia_l_offset">
 							<!--The geometry used to display the axes of this Frame.-->
 							<FrameGeometry name="frame_geometry">
 								<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -4298,7 +4316,7 @@
 								<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
 							</FrameGeometry>
 							<!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
-							<socket_parent>/bodyset/tibia_l</socket_parent>
+							<socket_parent>/bodyset/proximal_tibia_l</socket_parent>
 							<!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
 							<translation>-0.0080895399999999992 -0.0035347999999999998 0.00148474</translation>
 							<!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
@@ -4320,7 +4338,7 @@
 						</TransformAxis>
 						<TransformAxis name="rotation2">
 							<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
-							<coordinates>knee_adduction_l</coordinates>
+							<coordinates>knee_frontal_l</coordinates>
 							<!--Rotation or translation axis for the transform.-->
 							<axis>-1 0 0</axis>
 							<!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
@@ -4442,66 +4460,8 @@
 							<axis>-1 0 0</axis>
 							<!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
 							<LinearFunction name="function">
-								<coefficients> 1 0</coefficients>
+								<coefficients>1 0</coefficients>
 							</LinearFunction>
-						</TransformAxis>
-						<TransformAxis name="rotation2">
-							<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
-							<coordinates></coordinates>
-							<!--Rotation or translation axis for the transform.-->
-							<axis>0 1 0</axis>
-						</TransformAxis>
-						<TransformAxis name="rotation3">
-							<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
-							<coordinates></coordinates>
-							<!--Rotation or translation axis for the transform.-->
-							<axis>0 0 1</axis>
-						</TransformAxis>
-						<!--3 Axes for translations are listed next.-->
-						<TransformAxis name="translation1">
-							<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
-							<coordinates></coordinates>
-							<!--Rotation or translation axis for the transform.-->
-							<axis>1 0 0</axis>
-							<!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
-							<MultiplierFunction name="function">
-								<function>
-									<Constant name="function">
-										<value>0</value>
-									</Constant>
-								</function>
-								<scale>1.0201116780343291</scale>
-							</MultiplierFunction>
-						</TransformAxis>
-						<TransformAxis name="translation2">
-							<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
-							<coordinates></coordinates>
-							<!--Rotation or translation axis for the transform.-->
-							<axis>0 1 0</axis>
-							<!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
-							<MultiplierFunction name="function">
-								<function>
-									<Constant name="function">
-										<value>0</value>
-									</Constant>
-								</function>
-								<scale>1.0201116780343291</scale>
-							</MultiplierFunction>
-						</TransformAxis>
-						<TransformAxis name="translation3">
-							<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
-							<coordinates></coordinates>
-							<!--Rotation or translation axis for the transform.-->
-							<axis>0 0 1</axis>
-							<!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
-							<MultiplierFunction name="function">
-								<function>
-									<Constant name="function">
-										<value>0</value>
-									</Constant>
-								</function>
-								<scale>1.0201116780343291</scale>
-							</MultiplierFunction>
 						</TransformAxis>
 					</SpatialTransform>
 				</CustomJoint>

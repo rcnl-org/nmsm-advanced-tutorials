@@ -1,0 +1,2 @@
+plotTreatmentOptimizationResultsFromSettingsFile("DO_Settings_HTOOpt.xml")
+% plotTreatmentOptimizationResultsFromSettingsFile("DO_Settings_MTG.xml")
