@@ -2,7 +2,7 @@ close all
 
 settingsFileName = "DOSettings.xml";
 
-DesignOptimizationTool(settingsFileName)
+% DesignOptimizationTool(settingsFileName)
 
 plotTreatmentOptimizationResultsFromSettingsFile(settingsFileName)
 

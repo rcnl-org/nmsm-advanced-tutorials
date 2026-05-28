@@ -2,7 +2,7 @@ close all
 
 SettingsFileName = "VOSettings.xml";
 
-VerificationOptimizationTool(SettingsFileName)
+% VerificationOptimizationTool(SettingsFileName)
 
 plotTreatmentOptimizationResultsFromSettingsFile(SettingsFileName)
 

@@ -85,7 +85,7 @@
 				<!--Type of constraint term.-->
 				<type>kinetic_consistency</type>
 				<!--Space separated list containing model loads to be included in this cost term.-->
-				<load_list>hip_flexion_r_moment knee_angle_r_moment ankle_angle_r_moment subtalar_angle_r_moment hip_flexion_l_moment knee_angle_l_moment ankle_angle_l_moment subtalar_angle_l_moment</load_list>
+				<load_list>hip_flexion_r_moment hip_adduction_r_moment hip_rotation_r_moment knee_angle_r_moment ankle_angle_r_moment subtalar_angle_r_moment hip_flexion_l_moment hip_adduction_l_moment hip_rotation_l_moment knee_angle_l_moment ankle_angle_l_moment subtalar_angle_l_moment</load_list>
 				<!--Maximum error allowed by this constraint term.-->
 				<max_error>0.10000000000000001</max_error>
 				<!--Minimum error allowed by this constraint term.-->
