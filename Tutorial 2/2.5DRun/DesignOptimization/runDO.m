@@ -6,6 +6,6 @@ DesignOptimizationTool(settingsFileName)
 
 plotTreatmentOptimizationResultsFromSettingsFile(settingsFileName)
 
-IntegratedQuantitiesPreviewTool("PreviewIntegratedQuantitiesBefore.xml")
-
-IntegratedQuantitiesPreviewTool("PreviewIntegratedQuantitiesAfter.xml")
+% IntegratedQuantitiesPreviewTool("PreviewIntegratedQuantitiesBefore.xml")
+% 
+% IntegratedQuantitiesPreviewTool("PreviewIntegratedQuantitiesAfter.xml")
