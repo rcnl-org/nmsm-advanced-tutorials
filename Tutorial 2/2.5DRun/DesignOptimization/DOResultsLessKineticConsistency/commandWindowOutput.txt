@@ -1,3 +1,39 @@
+Cleared memory from opensimPointKin mex file.
+Cleared memory from inverseDynamics mex file.
+ ___________________________________________________________________ 
+|                                                                   |
+|            __________  ____  ____  _____        ________          |
+|           / ____/ __ \/ __ \/ __ \/ ___/       /  _/  _/          |
+|          / / __/ /_/ / / / / /_/ /\__ \ _____  / / / /            |
+|         / /_/ / ____/ /_/ / ____/___/ //____/_/ /_/ /             |
+|         \____/_/    \____/_/    /____/      /___/___/             |
+|                                                                   |
+| GPOPS-II Version 2.5.  Release Date: Aug 2018                     |
+|___________________________________________________________________|
+|                                                                   |
+| GPOPS-II Copyright (c) 2013-2019 Michael Patterson & Anil V. Rao. |
+|___________________________________________________________________|
+|                                                                   |
+| Downloading, using, copying, or modifying the GPOPS-II code       |
+| code constitutes an agreement to ALL of the terms of the          |
+| GPOPS-II license.                                                 |
+|___________________________________________________________________|
+ 
+ 
+GPOPS-II Defaults Used:
+    Using default setting setup.derivatives.numsamples = 10
+ 
+ 
+Finding Optimal Control Problem Dependencies
+ ___________________________________________________________________ 
+|                                                                   |
+|                 Finding Solution on Initial Mesh                  |
+|___________________________________________________________________|
+Computing Radau Points, Integration Weights, and Integration Matrix
+Creating Bounds For Nonlinear Program
+Creating Guess For Nonlinear Program
+Computing Scales For Nonlinear Program
+Calling Nonlinear Program ipopt
 
 List of user-set options:
 
@@ -111,3 +147,4 @@ Total CPU secs in IPOPT (w/o function evaluations)   =     13.527
 Total CPU secs in NLP function evaluations           =    505.992
 
 EXIT: Optimal Solution Found.
+Design Optimization Runtime: 0.152060 Hours
