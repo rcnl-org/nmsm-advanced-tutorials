@@ -5,7 +5,7 @@
 		<!--Directory for optimizer initial guess.-->
 		<initial_guess_directory>DOResults</initial_guess_directory>
 		<!--Directory for files for the optimizer to track.-->
-		<tracked_quantities_directory>DOResults</tracked_quantities_directory>
+		<tracked_quantities_directory>DOSettingsOnlyScaleUp</tracked_quantities_directory>
 		<!--Name of the input model file (.osim) to use.-->
 		<input_model_file>..\UF_Subject_4_Scaled_JMP.osim</input_model_file>
 		<!--Name of the osimx model file.-->

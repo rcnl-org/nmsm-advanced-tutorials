@@ -1,10 +1,11 @@
 close all
 
-settingsFileName = "DOSettings.xml";
+% settingsFileName = "DOSettings.xml";
 
-DesignOptimizationTool(settingsFileName)
+% DesignOptimizationTool("DOSettingsNoChange1.xml")
+% DesignOptimizationTool("DOSettingsOnlyScaleUp.xml")
 
-plotTreatmentOptimizationResultsFromSettingsFile(settingsFileName)
+% plotTreatmentOptimizationResultsFromSettingsFile(settingsFileName)
 
 IntegratedQuantitiesPreviewTool("PreviewIntegratedQuantitiesBefore.xml")
 

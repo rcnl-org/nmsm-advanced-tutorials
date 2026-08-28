@@ -1,0 +1,858 @@
+[2026-08-28 12:07:45.731] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP.osim
+[2026-08-28 12:07:49.184] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_hip_flexion_r.sto (nr=2525 nc=87)
+[2026-08-28 12:07:49.299] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_hip_flexion_r.sto (nr=2525 nc=87)
+[2026-08-28 12:07:49.362] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_hip_adduction_r.sto (nr=2525 nc=87)
+[2026-08-28 12:07:49.482] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_hip_rotation_r.sto (nr=2525 nc=87)
+[2026-08-28 12:07:49.602] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_knee_angle_r.sto (nr=2525 nc=87)
+[2026-08-28 12:07:49.718] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_ankle_angle_r.sto (nr=2525 nc=87)
+[2026-08-28 12:07:49.833] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_subtalar_angle_r.sto (nr=2525 nc=87)
+[2026-08-28 12:07:49.946] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_mtp_angle_r.sto (nr=2525 nc=87)
+[2026-08-28 12:07:50.058] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_hip_flexion_l.sto (nr=2525 nc=87)
+[2026-08-28 12:07:50.178] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_hip_adduction_l.sto (nr=2525 nc=87)
+[2026-08-28 12:07:50.301] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_hip_rotation_l.sto (nr=2525 nc=87)
+[2026-08-28 12:07:50.420] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_knee_angle_l.sto (nr=2525 nc=87)
+[2026-08-28 12:07:50.534] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_ankle_angle_l.sto (nr=2525 nc=87)
+[2026-08-28 12:07:50.648] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_subtalar_angle_l.sto (nr=2525 nc=87)
+[2026-08-28 12:07:50.761] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_mtp_angle_l.sto (nr=2525 nc=87)
+[2026-08-28 12:07:50.898] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_Length.sto (nr=2525 nc=87)
+[2026-08-28 12:07:51.029] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_Length.sto (nr=2525 nc=87)
+[2026-08-28 12:07:53.153] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP.osim
+[2026-08-28 12:07:53.274] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_0'.
+[2026-08-28 12:07:53.276] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_1'.
+[2026-08-28 12:07:53.278] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_2'.
+[2026-08-28 12:07:53.280] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_3'.
+[2026-08-28 12:07:53.282] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_4'.
+[2026-08-28 12:07:53.288] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_0'.
+[2026-08-28 12:07:53.289] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_1'.
+[2026-08-28 12:07:53.291] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_2'.
+[2026-08-28 12:07:53.293] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_3'.
+[2026-08-28 12:07:53.295] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_4'.
+[2026-08-28 12:07:53.297] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_5'.
+[2026-08-28 12:07:53.299] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_6'.
+[2026-08-28 12:07:53.300] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_7'.
+[2026-08-28 12:07:53.302] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_8'.
+[2026-08-28 12:07:53.304] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_9'.
+[2026-08-28 12:07:53.305] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_10'.
+[2026-08-28 12:07:53.307] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_5'.
+[2026-08-28 12:07:53.308] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_6'.
+[2026-08-28 12:07:53.310] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_7'.
+[2026-08-28 12:07:53.312] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_8'.
+[2026-08-28 12:07:53.313] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_9'.
+[2026-08-28 12:07:53.315] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_10'.
+[2026-08-28 12:07:53.371] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 12:07:53.427] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 12:07:53.470] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 12:07:53.505] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 12:07:53.540] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 12:07:53.574] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 12:07:53.610] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 12:07:53.646] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 12:07:53.681] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 12:07:53.716] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 12:07:53.751] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 12:07:53.786] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 12:07:53.822] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 12:07:53.857] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 12:07:53.894] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 12:07:53.930] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 12:07:53.965] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 12:07:54.001] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 12:07:54.038] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 12:07:54.073] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 12:07:54.111] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 12:07:54.146] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 12:07:57.079] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 12:07:57.079] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 12:07:57.079] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 12:07:57.079] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 12:07:57.081] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 12:07:57.081] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 12:07:57.082] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 12:07:57.082] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 12:07:57.083] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 12:07:57.083] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 12:07:57.083] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 12:07:57.083] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 12:07:57.085] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 12:07:57.085] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 12:07:57.085] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 12:07:57.085] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 12:07:57.087] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 12:07:57.087] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 12:07:57.087] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 12:07:57.087] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 12:07:57.089] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 12:07:57.089] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 12:07:57.089] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 12:07:57.089] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 12:07:57.091] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 12:07:57.091] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 12:07:57.092] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 12:07:57.092] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 12:07:57.093] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 12:07:57.093] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 12:07:57.093] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 12:07:57.094] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 12:07:57.095] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 12:07:57.095] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 12:07:57.095] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 12:07:57.095] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 12:07:57.097] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 12:07:57.097] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 12:07:57.097] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 12:07:57.097] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 12:07:57.099] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 12:07:57.099] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 12:07:57.099] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 12:07:57.099] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 12:07:57.101] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 12:07:57.101] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 12:07:57.101] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 12:07:57.101] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 12:07:57.103] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 12:07:57.103] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 12:07:57.103] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 12:07:57.103] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 12:07:57.105] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 12:07:57.105] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 12:07:57.105] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 12:07:57.105] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 12:07:57.107] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 12:07:57.107] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 12:07:57.107] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 12:07:57.107] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 12:07:57.108] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 12:07:57.108] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 12:07:57.109] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 12:07:57.109] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 12:07:57.110] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 12:07:57.110] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 12:07:57.110] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 12:07:57.110] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 12:07:57.111] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 12:07:57.111] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 12:07:57.111] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 12:07:57.112] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 12:07:57.113] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 12:07:57.113] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 12:07:57.113] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 12:07:57.113] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 12:07:57.114] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 12:07:57.114] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 12:07:57.114] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 12:07:57.114] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 13:04:42.462] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP.osim
+[2026-08-28 13:04:45.141] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_hip_flexion_r.sto (nr=2525 nc=87)
+[2026-08-28 13:04:45.254] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_hip_flexion_r.sto (nr=2525 nc=87)
+[2026-08-28 13:04:45.317] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_hip_adduction_r.sto (nr=2525 nc=87)
+[2026-08-28 13:04:45.437] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_hip_rotation_r.sto (nr=2525 nc=87)
+[2026-08-28 13:04:45.558] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_knee_angle_r.sto (nr=2525 nc=87)
+[2026-08-28 13:04:45.676] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_ankle_angle_r.sto (nr=2525 nc=87)
+[2026-08-28 13:04:45.792] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_subtalar_angle_r.sto (nr=2525 nc=87)
+[2026-08-28 13:04:45.905] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_mtp_angle_r.sto (nr=2525 nc=87)
+[2026-08-28 13:04:46.015] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_hip_flexion_l.sto (nr=2525 nc=87)
+[2026-08-28 13:04:46.135] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_hip_adduction_l.sto (nr=2525 nc=87)
+[2026-08-28 13:04:46.259] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_hip_rotation_l.sto (nr=2525 nc=87)
+[2026-08-28 13:04:46.380] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_knee_angle_l.sto (nr=2525 nc=87)
+[2026-08-28 13:04:46.495] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_ankle_angle_l.sto (nr=2525 nc=87)
+[2026-08-28 13:04:46.607] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_subtalar_angle_l.sto (nr=2525 nc=87)
+[2026-08-28 13:04:46.725] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_mtp_angle_l.sto (nr=2525 nc=87)
+[2026-08-28 13:04:46.856] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_Length.sto (nr=2525 nc=87)
+[2026-08-28 13:04:46.993] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_Length.sto (nr=2525 nc=87)
+[2026-08-28 13:04:47.708] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP.osim
+[2026-08-28 13:04:47.792] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_0'.
+[2026-08-28 13:04:47.793] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_1'.
+[2026-08-28 13:04:47.795] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_2'.
+[2026-08-28 13:04:47.797] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_3'.
+[2026-08-28 13:04:47.798] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_4'.
+[2026-08-28 13:04:47.802] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_0'.
+[2026-08-28 13:04:47.803] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_1'.
+[2026-08-28 13:04:47.805] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_2'.
+[2026-08-28 13:04:47.807] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_3'.
+[2026-08-28 13:04:47.808] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_4'.
+[2026-08-28 13:04:47.810] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_5'.
+[2026-08-28 13:04:47.812] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_6'.
+[2026-08-28 13:04:47.814] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_7'.
+[2026-08-28 13:04:47.815] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_8'.
+[2026-08-28 13:04:47.817] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_9'.
+[2026-08-28 13:04:47.818] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_10'.
+[2026-08-28 13:04:47.820] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_5'.
+[2026-08-28 13:04:47.822] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_6'.
+[2026-08-28 13:04:47.823] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_7'.
+[2026-08-28 13:04:47.825] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_8'.
+[2026-08-28 13:04:47.827] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_9'.
+[2026-08-28 13:04:47.828] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_10'.
+[2026-08-28 13:04:47.890] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 13:04:47.944] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 13:04:48.208] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 13:04:48.248] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 13:04:48.286] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 13:04:48.321] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 13:04:48.355] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 13:04:48.406] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 13:04:48.462] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 13:04:48.515] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 13:04:48.574] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 13:04:48.632] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 13:04:48.690] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 13:04:48.748] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 13:04:48.812] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 13:04:48.850] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 13:04:48.886] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 13:04:48.921] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 13:04:48.957] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 13:04:48.993] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 13:04:49.029] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 13:04:49.065] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 13:04:51.400] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 13:04:51.400] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 13:04:51.400] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 13:04:51.400] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 13:04:51.400] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 13:04:51.400] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 13:04:51.400] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 13:04:51.400] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 13:04:51.400] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 13:04:51.400] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 13:04:51.400] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 13:04:51.400] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 13:04:51.400] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 13:04:51.400] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 13:04:51.400] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 13:04:51.400] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 13:04:51.400] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 13:04:51.401] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 13:04:51.400] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 13:04:51.400] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 13:04:51.401] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 13:04:51.400] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 13:04:51.400] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 13:04:51.401] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 13:04:51.400] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 13:04:51.401] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 13:04:51.401] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 13:04:51.400] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 13:04:51.400] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 13:04:51.401] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 13:04:51.401] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 13:04:51.401] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 13:04:51.401] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 13:04:51.401] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 13:04:51.401] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 13:04:51.401] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 13:04:51.401] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 13:04:51.401] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 13:04:51.401] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 13:04:51.401] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 13:04:51.401] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 13:04:51.401] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 13:04:51.401] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 13:04:51.401] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 13:04:51.401] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 13:04:51.401] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 13:04:51.401] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 13:04:51.401] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 13:04:51.401] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 13:04:51.401] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 13:04:51.401] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 13:04:51.401] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 13:04:51.401] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 13:04:51.401] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 13:04:51.401] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 13:04:51.401] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 13:04:51.401] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 13:04:51.401] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 13:04:51.401] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 13:04:51.401] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 13:04:51.401] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 13:04:51.401] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 13:04:51.401] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 13:04:51.401] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 13:04:51.401] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 13:04:51.401] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 13:04:51.401] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 13:04:51.401] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 13:04:51.401] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 13:04:51.401] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 13:04:51.401] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 13:04:51.401] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 13:04:51.401] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 13:04:51.402] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 13:04:51.402] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 13:04:51.402] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 13:04:51.402] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 13:04:51.401] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 13:04:51.402] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 13:04:51.402] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:17:38.629] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP.osim
+[2026-08-28 14:17:41.285] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_hip_flexion_r.sto (nr=2525 nc=87)
+[2026-08-28 14:17:41.394] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_hip_flexion_r.sto (nr=2525 nc=87)
+[2026-08-28 14:17:41.457] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_hip_adduction_r.sto (nr=2525 nc=87)
+[2026-08-28 14:17:41.574] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_hip_rotation_r.sto (nr=2525 nc=87)
+[2026-08-28 14:17:41.692] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_knee_angle_r.sto (nr=2525 nc=87)
+[2026-08-28 14:17:41.803] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_ankle_angle_r.sto (nr=2525 nc=87)
+[2026-08-28 14:17:41.916] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_subtalar_angle_r.sto (nr=2525 nc=87)
+[2026-08-28 14:17:42.027] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_mtp_angle_r.sto (nr=2525 nc=87)
+[2026-08-28 14:17:42.136] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_hip_flexion_l.sto (nr=2525 nc=87)
+[2026-08-28 14:17:42.254] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_hip_adduction_l.sto (nr=2525 nc=87)
+[2026-08-28 14:17:42.374] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_hip_rotation_l.sto (nr=2525 nc=87)
+[2026-08-28 14:17:42.494] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_knee_angle_l.sto (nr=2525 nc=87)
+[2026-08-28 14:17:42.608] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_ankle_angle_l.sto (nr=2525 nc=87)
+[2026-08-28 14:17:42.720] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_subtalar_angle_l.sto (nr=2525 nc=87)
+[2026-08-28 14:17:42.831] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_mtp_angle_l.sto (nr=2525 nc=87)
+[2026-08-28 14:17:42.956] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_Length.sto (nr=2525 nc=87)
+[2026-08-28 14:17:43.090] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_Length.sto (nr=2525 nc=87)
+[2026-08-28 14:17:43.748] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP.osim
+[2026-08-28 14:17:43.825] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_0'.
+[2026-08-28 14:17:43.827] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_1'.
+[2026-08-28 14:17:43.829] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_2'.
+[2026-08-28 14:17:43.831] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_3'.
+[2026-08-28 14:17:43.833] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_4'.
+[2026-08-28 14:17:43.837] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_0'.
+[2026-08-28 14:17:43.838] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_1'.
+[2026-08-28 14:17:43.840] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_2'.
+[2026-08-28 14:17:43.842] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_3'.
+[2026-08-28 14:17:43.844] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_4'.
+[2026-08-28 14:17:43.846] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_5'.
+[2026-08-28 14:17:43.848] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_6'.
+[2026-08-28 14:17:43.849] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_7'.
+[2026-08-28 14:17:43.851] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_8'.
+[2026-08-28 14:17:43.853] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_9'.
+[2026-08-28 14:17:43.854] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_10'.
+[2026-08-28 14:17:43.856] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_5'.
+[2026-08-28 14:17:43.857] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_6'.
+[2026-08-28 14:17:43.859] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_7'.
+[2026-08-28 14:17:43.861] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_8'.
+[2026-08-28 14:17:43.862] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_9'.
+[2026-08-28 14:17:43.864] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_10'.
+[2026-08-28 14:17:43.920] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:17:43.988] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:17:44.249] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:17:44.297] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:17:44.336] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:17:44.370] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:17:44.403] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:17:44.436] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:17:44.469] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:17:44.504] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:17:44.539] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:17:44.572] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:17:44.605] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:17:44.638] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:17:44.671] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:17:44.704] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:17:44.739] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:17:44.773] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:17:44.807] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:17:44.841] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:17:44.876] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:17:44.912] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:17:47.095] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:17:47.095] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:17:47.095] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:17:47.095] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:17:47.096] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:17:47.096] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:17:47.096] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:17:47.096] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:17:47.096] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:17:47.096] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:17:47.096] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:17:47.096] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:17:47.096] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:17:47.096] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:17:47.096] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:17:47.096] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:17:47.096] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:17:47.096] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:17:47.096] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:17:47.096] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:17:47.096] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:17:47.096] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:17:47.096] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:17:47.096] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:17:47.096] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:17:47.096] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:17:47.096] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:17:47.096] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:17:47.096] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:17:47.096] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:17:47.096] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:17:47.096] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:17:47.096] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:17:47.096] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:17:47.096] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:17:47.096] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:17:47.096] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:17:47.096] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:17:47.096] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:17:47.096] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:17:47.096] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:17:47.096] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:17:47.096] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:17:47.097] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:17:47.097] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:17:47.097] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:17:47.097] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:17:47.097] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:17:47.097] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:17:47.097] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:17:47.097] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:17:47.097] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:17:47.097] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:17:47.097] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:17:47.097] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:17:47.097] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:17:47.097] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:17:47.097] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:17:47.097] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:17:47.097] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:17:47.097] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:17:47.097] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:17:47.097] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:17:47.097] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:17:47.097] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:17:47.097] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:17:47.097] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:17:47.097] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:17:47.097] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:17:47.097] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:17:47.097] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:17:47.097] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:17:47.097] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:17:47.097] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:17:47.097] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:17:47.097] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:17:47.097] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:17:47.097] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:17:47.097] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:17:47.098] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:17:47.373] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP.osim
+[2026-08-28 14:17:49.472] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_hip_flexion_r.sto (nr=2525 nc=87)
+[2026-08-28 14:17:49.582] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_hip_flexion_r.sto (nr=2525 nc=87)
+[2026-08-28 14:17:49.637] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_hip_adduction_r.sto (nr=2525 nc=87)
+[2026-08-28 14:17:49.748] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_hip_rotation_r.sto (nr=2525 nc=87)
+[2026-08-28 14:17:49.859] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_knee_angle_r.sto (nr=2525 nc=87)
+[2026-08-28 14:17:49.964] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_ankle_angle_r.sto (nr=2525 nc=87)
+[2026-08-28 14:17:50.070] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_subtalar_angle_r.sto (nr=2525 nc=87)
+[2026-08-28 14:17:50.174] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_mtp_angle_r.sto (nr=2525 nc=87)
+[2026-08-28 14:17:50.276] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_hip_flexion_l.sto (nr=2525 nc=87)
+[2026-08-28 14:17:50.387] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_hip_adduction_l.sto (nr=2525 nc=87)
+[2026-08-28 14:17:50.498] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_hip_rotation_l.sto (nr=2525 nc=87)
+[2026-08-28 14:17:50.610] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_knee_angle_l.sto (nr=2525 nc=87)
+[2026-08-28 14:17:50.718] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_ankle_angle_l.sto (nr=2525 nc=87)
+[2026-08-28 14:17:50.822] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_subtalar_angle_l.sto (nr=2525 nc=87)
+[2026-08-28 14:17:50.925] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_mtp_angle_l.sto (nr=2525 nc=87)
+[2026-08-28 14:17:51.041] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_Length.sto (nr=2525 nc=87)
+[2026-08-28 14:17:51.172] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_Length.sto (nr=2525 nc=87)
+[2026-08-28 14:17:51.701] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP.osim
+[2026-08-28 14:17:51.773] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_0'.
+[2026-08-28 14:17:51.775] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_1'.
+[2026-08-28 14:17:51.776] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_2'.
+[2026-08-28 14:17:51.778] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_3'.
+[2026-08-28 14:17:51.779] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_4'.
+[2026-08-28 14:17:51.783] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_0'.
+[2026-08-28 14:17:51.784] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_1'.
+[2026-08-28 14:17:51.786] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_2'.
+[2026-08-28 14:17:51.787] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_3'.
+[2026-08-28 14:17:51.789] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_4'.
+[2026-08-28 14:17:51.790] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_5'.
+[2026-08-28 14:17:51.792] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_6'.
+[2026-08-28 14:17:51.794] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_7'.
+[2026-08-28 14:17:51.795] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_8'.
+[2026-08-28 14:17:51.797] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_9'.
+[2026-08-28 14:17:51.798] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_10'.
+[2026-08-28 14:17:51.800] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_5'.
+[2026-08-28 14:17:51.802] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_6'.
+[2026-08-28 14:17:51.803] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_7'.
+[2026-08-28 14:17:51.805] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_8'.
+[2026-08-28 14:17:51.806] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_9'.
+[2026-08-28 14:17:51.808] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_10'.
+[2026-08-28 14:17:51.865] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:17:51.910] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:17:52.150] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:17:52.189] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:17:52.224] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:17:52.258] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:17:52.291] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:17:52.324] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:17:52.357] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:17:52.390] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:17:52.424] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:17:52.459] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:17:52.492] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:17:52.525] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:17:52.558] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:17:52.591] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:17:52.625] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:17:52.659] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:17:52.693] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:17:52.728] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:17:52.762] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:17:52.797] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:17:54.843] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:17:54.843] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:17:54.843] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:17:54.843] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:17:54.843] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:17:54.843] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:17:54.843] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:17:54.843] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:17:54.843] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:17:54.843] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:17:54.843] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:17:54.843] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:17:54.843] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:17:54.843] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:17:54.843] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:17:54.843] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:17:54.843] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:17:54.843] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:17:54.843] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:17:54.843] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:17:54.843] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:17:54.843] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:17:54.843] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:17:54.843] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:17:54.843] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:17:54.843] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:17:54.843] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:17:54.843] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:17:54.843] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:17:54.843] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:17:54.843] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:17:54.843] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:17:54.843] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:17:54.843] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:17:54.843] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:17:54.843] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:17:54.844] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:17:54.843] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:17:54.843] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:17:54.844] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:17:54.843] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:17:54.843] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:17:54.843] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:17:54.844] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:17:54.844] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:17:54.843] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:17:54.844] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:17:54.844] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:17:54.844] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:17:54.843] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:17:54.844] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:17:54.844] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:17:54.844] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:17:54.844] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:17:54.844] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:17:54.844] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:17:54.844] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:17:54.844] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:17:54.844] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:17:54.844] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:17:54.844] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:17:54.844] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:17:54.844] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:17:54.844] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:17:54.844] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:17:54.844] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:17:54.844] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:17:54.844] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:17:54.844] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:17:54.844] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:17:54.844] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:17:54.844] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:17:54.844] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:17:54.844] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:17:54.844] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:17:54.844] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:17:54.844] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:17:54.844] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:17:54.844] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:17:54.844] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:18:13.367] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP.osim
+[2026-08-28 14:18:15.410] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_hip_flexion_r.sto (nr=2525 nc=87)
+[2026-08-28 14:18:15.521] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_hip_flexion_r.sto (nr=2525 nc=87)
+[2026-08-28 14:18:15.575] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_hip_adduction_r.sto (nr=2525 nc=87)
+[2026-08-28 14:18:15.685] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_hip_rotation_r.sto (nr=2525 nc=87)
+[2026-08-28 14:18:15.795] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_knee_angle_r.sto (nr=2525 nc=87)
+[2026-08-28 14:18:15.900] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_ankle_angle_r.sto (nr=2525 nc=87)
+[2026-08-28 14:18:16.007] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_subtalar_angle_r.sto (nr=2525 nc=87)
+[2026-08-28 14:18:16.111] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_mtp_angle_r.sto (nr=2525 nc=87)
+[2026-08-28 14:18:16.212] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_hip_flexion_l.sto (nr=2525 nc=87)
+[2026-08-28 14:18:16.324] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_hip_adduction_l.sto (nr=2525 nc=87)
+[2026-08-28 14:18:16.435] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_hip_rotation_l.sto (nr=2525 nc=87)
+[2026-08-28 14:18:16.547] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_knee_angle_l.sto (nr=2525 nc=87)
+[2026-08-28 14:18:16.652] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_ankle_angle_l.sto (nr=2525 nc=87)
+[2026-08-28 14:18:16.758] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_subtalar_angle_l.sto (nr=2525 nc=87)
+[2026-08-28 14:18:16.862] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_mtp_angle_l.sto (nr=2525 nc=87)
+[2026-08-28 14:18:16.979] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_Length.sto (nr=2525 nc=87)
+[2026-08-28 14:18:17.109] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_Length.sto (nr=2525 nc=87)
+[2026-08-28 14:18:17.603] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP.osim
+[2026-08-28 14:18:17.677] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_0'.
+[2026-08-28 14:18:17.679] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_1'.
+[2026-08-28 14:18:17.681] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_2'.
+[2026-08-28 14:18:17.682] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_3'.
+[2026-08-28 14:18:17.684] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_4'.
+[2026-08-28 14:18:17.687] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_0'.
+[2026-08-28 14:18:17.689] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_1'.
+[2026-08-28 14:18:17.690] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_2'.
+[2026-08-28 14:18:17.692] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_3'.
+[2026-08-28 14:18:17.694] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_4'.
+[2026-08-28 14:18:17.695] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_5'.
+[2026-08-28 14:18:17.697] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_6'.
+[2026-08-28 14:18:17.698] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_7'.
+[2026-08-28 14:18:17.700] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_8'.
+[2026-08-28 14:18:17.702] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_9'.
+[2026-08-28 14:18:17.703] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_10'.
+[2026-08-28 14:18:17.705] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_5'.
+[2026-08-28 14:18:17.706] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_6'.
+[2026-08-28 14:18:17.708] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_7'.
+[2026-08-28 14:18:17.709] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_8'.
+[2026-08-28 14:18:17.711] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_9'.
+[2026-08-28 14:18:17.713] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_10'.
+[2026-08-28 14:18:17.769] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:18:17.815] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:18:18.057] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:18:18.095] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:18:18.134] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:18:18.171] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:18:18.205] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:18:18.239] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:18:18.272] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:18:18.305] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:18:18.338] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:18:18.371] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:18:18.403] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:18:18.437] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:18:18.470] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:18:18.503] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:18:18.537] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:18:18.572] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:18:18.606] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:18:18.640] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:18:18.674] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:18:18.709] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:18:20.756] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:18:20.756] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:18:20.756] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:18:20.756] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:18:20.756] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:18:20.756] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:18:20.756] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:18:20.756] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:18:20.756] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:18:20.756] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:18:20.756] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:18:20.756] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:18:20.756] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:18:20.757] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:18:20.756] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:18:20.756] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:18:20.756] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:18:20.757] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:18:20.756] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:18:20.756] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:18:20.756] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:18:20.757] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:18:20.757] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:18:20.756] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:18:20.757] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:18:20.756] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:18:20.756] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:18:20.757] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:18:20.757] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:18:20.756] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:18:20.757] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:18:20.757] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:18:20.756] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:18:20.757] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:18:20.757] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:18:20.757] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:18:20.757] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:18:20.757] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:18:20.757] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:18:20.757] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:18:20.757] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:18:20.757] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:18:20.757] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:18:20.757] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:18:20.757] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:18:20.757] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:18:20.757] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:18:20.757] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:18:20.757] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:18:20.757] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:18:20.757] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:18:20.757] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:18:20.757] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:18:20.757] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:18:20.757] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:18:20.757] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:18:20.757] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:18:20.757] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:18:20.757] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:18:20.757] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:18:20.757] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:18:20.757] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:18:20.757] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:18:20.757] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:18:20.757] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:18:20.757] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:18:20.757] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:18:20.757] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:18:20.757] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:18:20.757] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:18:20.757] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:18:20.757] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:18:20.757] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:18:20.758] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:18:20.758] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:18:20.758] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:18:20.758] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:18:20.758] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:18:20.758] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:18:20.758] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:18:21.002] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP.osim
+[2026-08-28 14:18:23.057] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_hip_flexion_r.sto (nr=2525 nc=87)
+[2026-08-28 14:18:23.168] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_hip_flexion_r.sto (nr=2525 nc=87)
+[2026-08-28 14:18:23.221] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_hip_adduction_r.sto (nr=2525 nc=87)
+[2026-08-28 14:18:23.331] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_hip_rotation_r.sto (nr=2525 nc=87)
+[2026-08-28 14:18:23.442] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_knee_angle_r.sto (nr=2525 nc=87)
+[2026-08-28 14:18:23.547] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_ankle_angle_r.sto (nr=2525 nc=87)
+[2026-08-28 14:18:23.652] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_subtalar_angle_r.sto (nr=2525 nc=87)
+[2026-08-28 14:18:23.757] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_mtp_angle_r.sto (nr=2525 nc=87)
+[2026-08-28 14:18:23.858] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_hip_flexion_l.sto (nr=2525 nc=87)
+[2026-08-28 14:18:23.968] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_hip_adduction_l.sto (nr=2525 nc=87)
+[2026-08-28 14:18:24.080] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_hip_rotation_l.sto (nr=2525 nc=87)
+[2026-08-28 14:18:24.192] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_knee_angle_l.sto (nr=2525 nc=87)
+[2026-08-28 14:18:24.298] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_ankle_angle_l.sto (nr=2525 nc=87)
+[2026-08-28 14:18:24.402] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_subtalar_angle_l.sto (nr=2525 nc=87)
+[2026-08-28 14:18:24.506] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_MomentArm_mtp_angle_l.sto (nr=2525 nc=87)
+[2026-08-28 14:18:24.622] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_Length.sto (nr=2525 nc=87)
+[2026-08-28 14:18:24.752] [info] Storage: read data file = ..\TrackingOptimization\surrogateData\MAData\gait_1\gait_1_MuscleAnalysis_Length.sto (nr=2525 nc=87)
+[2026-08-28 14:18:25.231] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP.osim
+[2026-08-28 14:18:25.303] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_0'.
+[2026-08-28 14:18:25.305] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_1'.
+[2026-08-28 14:18:25.307] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_2'.
+[2026-08-28 14:18:25.309] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_3'.
+[2026-08-28 14:18:25.310] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_4'.
+[2026-08-28 14:18:25.314] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_0'.
+[2026-08-28 14:18:25.315] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_1'.
+[2026-08-28 14:18:25.317] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_2'.
+[2026-08-28 14:18:25.318] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_3'.
+[2026-08-28 14:18:25.320] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_4'.
+[2026-08-28 14:18:25.321] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_5'.
+[2026-08-28 14:18:25.323] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_6'.
+[2026-08-28 14:18:25.325] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_7'.
+[2026-08-28 14:18:25.326] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_8'.
+[2026-08-28 14:18:25.328] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_9'.
+[2026-08-28 14:18:25.329] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'pointactuator'. The duplicate is being renamed to 'pointactuator_10'.
+[2026-08-28 14:18:25.331] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_5'.
+[2026-08-28 14:18:25.333] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_6'.
+[2026-08-28 14:18:25.334] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_7'.
+[2026-08-28 14:18:25.336] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_8'.
+[2026-08-28 14:18:25.337] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_9'.
+[2026-08-28 14:18:25.339] [warning] ForceSet 'forceset' has subcomponents with duplicate name 'torqueactuator'. The duplicate is being renamed to 'torqueactuator_10'.
+[2026-08-28 14:18:25.395] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:18:25.439] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:18:25.672] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:18:25.707] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:18:25.755] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:18:25.799] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:18:25.833] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:18:25.866] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:18:25.900] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:18:25.933] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:18:25.965] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:18:25.998] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:18:26.031] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:18:26.064] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:18:26.099] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:18:26.133] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:18:26.166] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:18:26.199] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:18:26.232] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:18:26.265] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:18:26.298] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:18:26.330] [info] Loaded model Full_Body_Walking_Model-Scaled_Adjusted from file ..\UF_Subject_4_Scaled_JMP_inactiveMuscles.osim
+[2026-08-28 14:18:28.364] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:18:28.364] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:18:28.364] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:18:28.364] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:18:28.364] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:18:28.364] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:18:28.364] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:18:28.364] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:18:28.364] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:18:28.364] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:18:28.364] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:18:28.364] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:18:28.364] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:18:28.364] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:18:28.364] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:18:28.364] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:18:28.364] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:18:28.364] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:18:28.364] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:18:28.364] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:18:28.364] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:18:28.364] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:18:28.364] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:18:28.364] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:18:28.364] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:18:28.364] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:18:28.364] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:18:28.364] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:18:28.364] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:18:28.364] [warning] Coordinate.setValue:  coordinate knee_adduction_r is locked. Unable to change its value.
+[2026-08-28 14:18:28.364] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:18:28.364] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:18:28.364] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:18:28.364] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:18:28.364] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:18:28.364] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:18:28.364] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:18:28.364] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:18:28.364] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:18:28.364] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:18:28.365] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:18:28.365] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:18:28.364] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:18:28.365] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:18:28.365] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:18:28.365] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:18:28.365] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:18:28.365] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:18:28.365] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:18:28.365] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:18:28.365] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:18:28.365] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:18:28.365] [warning] Coordinate.setValue:  coordinate knee_adduction_l is locked. Unable to change its value.
+[2026-08-28 14:18:28.365] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:18:28.365] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:18:28.365] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:18:28.365] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:18:28.365] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:18:28.365] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:18:28.365] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:18:28.365] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:18:28.365] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:18:28.365] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:18:28.365] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:18:28.365] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:18:28.365] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:18:28.365] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:18:28.365] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:18:28.365] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:18:28.365] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:18:28.365] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:18:28.365] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:18:28.365] [warning] Coordinate.setValue:  coordinate pro_sup_r is locked. Unable to change its value.
+[2026-08-28 14:18:28.365] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:18:28.365] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:18:28.365] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:18:28.365] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:18:28.365] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:18:28.365] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
+[2026-08-28 14:18:28.365] [warning] Coordinate.setValue:  coordinate pro_sup_l is locked. Unable to change its value.
